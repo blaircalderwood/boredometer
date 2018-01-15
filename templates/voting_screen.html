@@ -1,0 +1,9 @@
+{% extends 'base_template.html' %}
+{% load static %}
+{% block content %}
+
+    <a type="button" href="{% url 'bored' lesson_number=lesson.number %}">
+        <img src="{% static 'images/bored_button.png' %}" alt="Bored button">
+    </a>
+
+{% endblock %}

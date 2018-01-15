@@ -1,0 +1,10 @@
+{% extends 'base_template.html' %}
+
+{% block content %}
+    <label>Lesson number:
+        <input type="text">
+    </label>
+    <div>
+    <a href="{% url 'create' %}">I'm teaching a lesson</a>
+    </div>
+{% endblock %}
