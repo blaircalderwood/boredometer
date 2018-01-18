@@ -1,10 +1,21 @@
 {% extends 'base_template.html' %}
+{% load static %}
+
+{% block scripts %}
+    <script src="{% static 'js/lessonFinder.es6' %}"></script>
+{% endblock %}
 
 {% block content %}
-    <label>Lesson number:
-        <input type="text">
-    </label>
-    <div>
-    <a href="{% url 'create' %}">I'm teaching a lesson</a>
+    <div class="row">
+        <form class="col-md-6" action="/" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <button class="button" type="submit">Join Lesson</button>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <button class="button" href="{% url 'create' %}">I'm teaching a lesson</button>
+        </div>
     </div>
 {% endblock %}

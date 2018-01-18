@@ -5,23 +5,29 @@
     <meta charset="UTF-8">
     <title>Boredometer</title>
 
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/static.andigital.com/fonts/fonts.css"
+          type="text/css">
+
+</head>
+<body>
+
+<main class="align-center red-theme">
+    <h1>BORED-OMETER</h1>
+
+    {% block content %}
+    {% endblock %}
+
+</main>
+
+</body>
+
+<footer>
     <script
             src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
     {% block scripts %}
     {% endblock %}
-
-</head>
-<body>
-
-<section class="align-center">
-    <h1>BORED-OMETER</h1>
-
-    {% block content %}
-    {% endblock %}
-
-</section>
-
-</body>
+</footer>
 </html>

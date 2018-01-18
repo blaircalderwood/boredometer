@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.core.exceptions import ObjectDoesNotExist
 from boredometer_app.logic import lessons
+from boredometer_app.forms import JoinForm
 
 
 def voting_screen(req, lesson_number):
@@ -11,7 +12,15 @@ def voting_screen(req, lesson_number):
 
 
 def main_screen(req):
-    return render(req, 'main_screen.html')
+
+    if req.method == "POST":
+        form = JoinForm(req.POST)
+
+        if form.is_valid():
+            cleaned_form = form.cleaned_data
+            return redirect('vote', lesson_number=cleaned_form['lesson_number'])
+
+    return render(req, 'main_screen.html', {'form': JoinForm})
 
 
 def create(req, lesson_number=''):
@@ -25,6 +34,11 @@ def create(req, lesson_number=''):
         lesson = lessons.create()
 
     return redirect('view_lesson', lesson_number=lesson.number)
+
+
+def join(req, form_data):
+    print(form_data)
+    return redirect('main_screen')
 
 
 def view_lesson(req, lesson_number):
