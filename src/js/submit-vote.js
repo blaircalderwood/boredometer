@@ -1,19 +1,19 @@
-function pollSection(lessonId) {
+function pollSection() {
     setInterval(() => {
-        $.get(`/vote/${lessonId}/update`, (data) => {
-            if(data['sectionNumber'] !== localStorage.getItem('section')) {
-                localStorage.setItem('lesson', data['lesson.id']);
-                location.reload();
+        $.get(`/vote/${localStorage.getItem('lessonId')}/update`, (data) => {
+            if(data['sectionNumber'] !== parseInt(localStorage.getItem('sectionNumber'))) {
+                localStorage.setItem('sectionNumber', data['sectionNumber']);
+                _('.js-voted-message').addClass('hide');
+                _('[data-mod=submit-vote]').removeClass('voting--disabled');
             }
         })
     }, 1000);
 }
 
-
 module.exports = () => {
     const _voteBored = _('[data-mod=submit-vote]');
 
-    _voteBored.find('a').forEach((link) => {
+    _voteBored.find('.vote-section__links').forEach((link) => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
 
@@ -22,10 +22,9 @@ module.exports = () => {
 
                 $.get(_link[0].href, (data) => {
                     if (data.success) {
-                        _voteBored.find('a').addClass('link--disabled');
-                        _voteBored.find('path')[0].setAttribute('fill', '#898989');
-                        localStorage.setItem('lesson', _voteBored[0].dataset.section);
-                        pollSection(_voteBored[0].dataset.section);
+                        pollSection();
+                        _('.js-voted-message').removeClass('hide');
+                        _voteBored.addClass('voting--disabled');
                     }   
                 });
             }

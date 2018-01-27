@@ -19,16 +19,40 @@ label {
     // @extend .form-label;
 }
 
+.voting--disabled {
+    .vote-section__links {
+        &:hover {
+            cursor: none;
+        }
+    }
+}
+
 .link--success {
     border-color: $green !important;
     color: $green !important;
 }
 
-.link--disabled {
-    border-color: $grey !important;
-    color: $grey !important;
+.hide {
+    display: none;
+}
 
-    &:hover {
-        cursor: none;
+.vote-section {
+    &__dialog {
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    &__dialog-message {
+        background-color: #fff;
+        position: absolute;
+        top: 100px;
+        left: 20px;
+        right: 20px;
+        padding: 20px;
     }
 }
