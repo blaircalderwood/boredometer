@@ -24,6 +24,27 @@ class LessonTestCase(TestCase):
         self.assertRaises(ObjectDoesNotExist, Lesson.get, 'non123')
 
 
+class SectionNumberTestCase(TestCase):
+
+    def setUp(self):
+        self.testCase = Lesson.objects.create(id='ran111')
+
+    def tearDown(self):
+        self.testCase.delete()
+
+    def test_next_section_from_one(self):
+        """Clicking next section should increase section number from one to two"""
+        self.testCase.section_number = 0
+        self.testCase.next_section()
+        self.assertEqual(self.testCase.section_number, 1)
+
+    def test_next_section_from_eleven(self):
+        """Clicking next section should increase section number from eleven to twelve"""
+        self.testCase.section_number = 11
+        self.testCase.next_section()
+        self.assertEqual(self.testCase.section_number, 12)
+
+
 class BoredTestCase(TestCase):
 
     def setUp(self):
