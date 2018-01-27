@@ -1,0 +1,43 @@
+.lesson-signup {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  background: #ffffff;
+  padding-top: 1rem; }
+
+.button--full-width {
+  width: 100%; }
+
+.home {
+  padding-bottom: 136px; }
+
+.header-logo {
+  margin: 15px 0; }
+
+.voting--disabled .vote-section__links:hover {
+  cursor: none; }
+
+.link--success {
+  border-color: #5AC328 !important;
+  color: #5AC328 !important; }
+
+.hide {
+  display: none; }
+
+.vote-section__dialog {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.vote-section__dialog-message {
+  background-color: #fff;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  right: 20px;
+  padding: 20px; }

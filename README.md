@@ -5,14 +5,20 @@
 ### Installing Python 3
 
 Install Python 3 using Brew:
-```brew install python3```
+```
+brew install python3
+```
 
 Check if Python3 is already accessible in Terminal:
-```python3 --version```
+```
+python3 --version
+```
 
 If it is not accessible then add it to your path:
 
-```export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"```
+```
+export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+```
 
 If you have installed Python in another location then change the path accordingly.
 
@@ -20,21 +26,40 @@ If you have installed Python in another location then change the path accordingl
 
 Pip3 can be installed by running:
 
-```brew postinstall python3```
+```
+brew postinstall python3
+```
 
 ### Installing Django
 
-```pip3 install django```
-
-### Installing other dependencies via NPM
-```npm install```
+```
+pip3 install django
+```
 
 ## Running the project
 
 The project can be run using 
 
-```python3 manage.py runserver```
+```
+python3 manage.py runserver
+```
 
 If the database models have been altered in any way then they will need to be migrated. Do this by running:
 
-```python3 manage.py makemigrations && python3 manage.py migrate```
+```
+python3 manage.py makemigrations && python3 manage.py migrate
+```
+
+## Front end
+
+### install Front end dependencies via NPM
+
+```
+npm install
+```
+
+The front-end assets can be built using 
+
+```
+yarn start
+```

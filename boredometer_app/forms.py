@@ -2,4 +2,4 @@ from django import forms
 
 
 class JoinForm(forms.Form):
-    lesson_id = forms.CharField(label="Lesson number", max_length=6)
+    lesson_id = forms.CharField(label="Lesson ID", max_length=6)
