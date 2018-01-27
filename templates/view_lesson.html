@@ -6,9 +6,10 @@
 {% endblock %}
 
 {% block content %}
-    <p>Lesson Number: <span id="lessonNumber">{{ lesson.number }}</span></p>
+    <p>Lesson Number: <span id="lessonNumber">{{ lesson.id }}</span></p>
     <p>You have <span id="amountBored">{{ lesson.amount_bored }}</span>/
         <span id="participants">{{ lesson.participants }}</span> bored participants</p>
-    <a href="{% url 'clear_bored' lesson_number=lesson.number %}">Next Section</a>
-    <a href="{% url 'end_lesson' lesson_number=lesson.number %}">End Lesson</a>
+    <a href="{% url 'clear_bored' lesson_id=lesson.id %}">Next Section</a>
+    <a href="{% url 'end_lesson' lesson_id=lesson.id %}">End Lesson</a>
+    <a href="{% url 'next_question' lesson_id=lesson.id %}">Deploy Next Question</a>
 {% endblock %}

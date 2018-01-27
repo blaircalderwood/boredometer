@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 
-    <a type="button" href="{% url 'bored' lesson_number=lesson.number %}">
+    <a type="button" href="{% url 'bored' lesson_id=lesson.id %}">
         <img src="{% static 'images/bored_button.png' %}" alt="Bored button">
     </a>
 
