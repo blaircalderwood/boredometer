@@ -18,3 +18,9 @@
 .link--success {
   border-color: #5AC328 !important;
   color: #5AC328 !important; }
+
+.link--disabled {
+  border-color: #898989 !important;
+  color: #898989 !important; }
+  .link--disabled:hover {
+    cursor: none; }

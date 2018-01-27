@@ -56,7 +56,7 @@ def update_students_lesson(req, lesson_id):
 def bored(req, lesson_id):
     lesson = Lesson.get(lesson_id)
     lesson.add_to_bored()
-    return render(req, 'main_screen.html')
+    return JsonResponse({'success': True})
 
 
 def clear_bored(req, lesson_id):

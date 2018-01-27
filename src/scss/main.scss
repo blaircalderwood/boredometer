@@ -1,4 +1,5 @@
 $green: #5AC328;
+$grey: #898989;
 
 @import "lesson-signup";
 
@@ -21,4 +22,13 @@ label {
 .link--success {
     border-color: $green !important;
     color: $green !important;
+}
+
+.link--disabled {
+    border-color: $grey !important;
+    color: $grey !important;
+
+    &:hover {
+        cursor: none;
+    }
 }
