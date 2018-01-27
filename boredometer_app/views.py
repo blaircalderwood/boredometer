@@ -48,9 +48,11 @@ def update_teachers_lesson(req, lesson_id):
 
 
 def update_students_lesson(req, lesson_id):
-    lesson = Lesson.get(lesson_id)
-    questions = lesson.get_questions()
-    return JsonResponse({'lesson': lesson, 'questions': questions})
+    try:
+        lesson = Lesson.get(lesson_id)
+        return JsonResponse({'success': True, 'lesson.id': lesson.id, 'sectionNumber': lesson.section_number})
+    except ObjectDoesNotExist:
+        return JsonResponse({'success': False})
 
 
 def bored(req, lesson_id):
@@ -59,9 +61,10 @@ def bored(req, lesson_id):
     return JsonResponse({'success': True})
 
 
-def clear_bored(req, lesson_id):
+def next_section(req, lesson_id):
     lesson = Lesson.get(lesson_id)
     lesson.clear_bored()
+    lesson.next_section()
     return render(req, 'view_lesson.html', {'lesson': lesson})
 
 

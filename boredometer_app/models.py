@@ -4,6 +4,7 @@ from django.core.exceptions import ObjectDoesNotExist
 
 class Lesson(models.Model):
     id = models.CharField(unique=True, max_length=6, primary_key=True)
+    section_number = models.IntegerField(default=0)
     participants = models.IntegerField(default=0)
     amount_bored = models.IntegerField(default=0)
 
@@ -32,4 +33,8 @@ class Lesson(models.Model):
 
     def end(self):
         self.delete()
+
+    def next_section(self):
+        self.section_number += 1
+        self.save()
 

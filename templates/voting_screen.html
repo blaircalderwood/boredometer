@@ -15,7 +15,7 @@
             Vote wisely and only when you feel passionately either way.
         </p>
         
-        <div data-mod="submit-vote" data-lesson="{{ lesson.id }}">
+        <div data-mod="submit-vote" data-section="{{ sectionNumber }}">
             <a href="{% url 'bored' lesson_id=lesson.id %}?bored=true" class="link-primary button--full-width">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 475.099 475.099" style="display: block; margin: 0 auto 10px;" xml:space="preserve">
                     <g>
@@ -24,7 +24,7 @@
                 </svg>
                 I'm not learning
             </a>
-            <a href="#?love=true" class="link-primary button--full-width link--success">
+            <a href="{% url 'bored' lesson_id=lesson.id %}?love=true" class="link-primary button--full-width link--success">
                 I love this
             </a>
         </div>
