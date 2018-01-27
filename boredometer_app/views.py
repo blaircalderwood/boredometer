@@ -6,13 +6,19 @@ from boredometer_app.models import Lesson
 from boredometer_app.logic.random_id import RandomId
 
 
-def voting_screen(req, lesson_id):
+def voting_screen(req, lesson_id, participant_id=''):
     try:
         lesson = Lesson.get(lesson_id)
-        lesson.add_participant()
+        participant_id = lesson.add_participant(participant_id)
         return render(req, 'voting_screen.html', {'lesson': lesson, 'sectionNumber': lesson.section_number})
     except ObjectDoesNotExist:
         return render(req, 'no_lesson_found.html')
+
+
+def add_to_participants(req, lesson_id, participant_id=''):
+    lesson = Lesson.get(lesson_id)
+    participant_id = lesson.add_participant(participant_id)
+    return JsonResponse({'participantId': participant_id})
 
 
 def main_screen(req):
