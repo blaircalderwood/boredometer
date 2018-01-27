@@ -1,21 +1,46 @@
 {% extends 'base_template.html' %}
 {% load static %}
 
-{% block scripts %}
-    <script src="{% static 'js/lessonFinder.es6' %}"></script>
+{% block hero %}
+
+<div class="hero" 
+    style="background-image: url(https://static.andigital.com/wp-content/uploads/2015/03/14162240/Beach-No-fisherman.png)">
+    <div class="hero-content">
+        <h1 class="hero-text">Bored-o-meter</h1>
+    </div>
+</div>
+
 {% endblock %}
 
 {% block content %}
-    <div class="row">
-        <form class="col-md-6" action="/" method="post">
-            {% csrf_token %}
-            {{ form }}
-            <button class="button" type="submit">Join Lesson</button>
-        </form>
+    <div class="home">
+        <div class="section">
+            <div class="text-center heading-1">
+                Make learning efficient
+            </div>
+        </div>
+
+        <p class="text-lead text-center pb-0">
+            To get started, enter the ID of the room you 
+            want to participate in.
+        </p>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <button class="button" href="{% url 'create' %}">I'm teaching a lesson</button>
+    <div class="lesson-signup">
+        <div class="container">
+            <div class="row">
+                <form class="col-md-6" action="/" method="post" id="lesson-id-form">
+                    {% csrf_token %}
+                    {{ form }}
+                </form>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a class="link-primary button--full-width" href="{% url 'create' %}">I'm a lecturer</a>
+                </div>
+                <div class="col">
+                    <button class="button button--full-width" type="submit" form="lesson-id-form">Enter Lesson</button>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}

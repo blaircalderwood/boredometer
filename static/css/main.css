@@ -1,0 +1,16 @@
+.lesson-signup {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  background: #ffffff;
+  padding-top: 1rem; }
+
+.button--full-width {
+  width: 100%; }
+
+.home {
+  padding-bottom: 136px; }
+
+.header-logo {
+  margin: 15px 0; }
