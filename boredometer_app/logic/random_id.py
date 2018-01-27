@@ -4,6 +4,7 @@ from random import randint, choice
 
 class RandomId:
 
+    @staticmethod
     def random_string(self, length=3):
         string = ''
         for num in range(length):
@@ -11,6 +12,7 @@ class RandomId:
 
         return string
 
+    @staticmethod
     def random_int(self, length=3):
         num_string = ''
         for num in range(length):

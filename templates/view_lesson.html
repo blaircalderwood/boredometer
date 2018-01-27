@@ -11,5 +11,4 @@
         <span id="participants">{{ lesson.participants }}</span> bored participants</p>
     <a href="{% url 'clear_bored' lesson_id=lesson.id %}">Next Section</a>
     <a href="{% url 'end_lesson' lesson_id=lesson.id %}">End Lesson</a>
-    <a href="{% url 'next_question' lesson_id=lesson.id %}">Deploy Next Question</a>
 {% endblock %}
