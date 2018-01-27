@@ -60,7 +60,7 @@ def next_section(req, lesson_id):
 def end_lesson(req, lesson_id):
     lesson = Lesson.get(lesson_id)
     lesson.delete()
-    return render(req, 'main_screen.html')
+    return redirect('main_screen')
 
 
 def update_teachers_lesson(req, lesson_id):
