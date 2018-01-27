@@ -2,14 +2,14 @@
 {% load static %}
 {% block content %}
 
+
 <div class="section">
     <div class="text-center heading-1">
         Lesson ID: {{ lesson.id }}
     </div>
 </div>
-
-    <a type="button" href="{% url 'bored' lesson_id=lesson.id %}">
-        <img src="{% static 'images/bored_button.png' %}" alt="Bored button">
-    </a>
+<a type="button" href="{% url 'bored' lesson_id=lesson.id %}">
+    <img src="{% static 'images/bored_button.png' %}" alt="Bored button">
+</a>
 
 {% endblock %}

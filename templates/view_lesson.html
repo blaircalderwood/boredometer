@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block content %}
-    <div data-mod="refresh-screen">
-        <p>Lesson Number: <span id="lessonNumber">{{ lesson.number }}</span></p>
-        <p>You have <span id="amountBored">{{ lesson.amount_bored }}</span>/
+<div data-mod="refresh-screen">
+    <p>Lesson Number: <span id="lessonNumber">{{ lesson.id }}</span></p>
+    <p>You have <span id="amountBored">{{ lesson.amount_bored }}</span>/
         <span id="participants">{{ lesson.participants }}</span> bored participants</p>
-        <a href="{% url 'clear_bored' lesson_number=lesson.number %}">Next Section</a>
-        <a href="{% url 'end_lesson' lesson_number=lesson.number %}">End Lesson</a>
-    </div>
+    <a href="{% url 'clear_bored' lesson_id=lesson.id %}">Next Section</a>
+    <a href="{% url 'end_lesson' lesson_id=lesson.id %}">End Lesson</a>
+</div>
 {% endblock %}
