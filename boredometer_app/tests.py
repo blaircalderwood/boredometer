@@ -8,6 +8,9 @@ class LessonTestCase(TestCase):
     def setUp(self):
         self.testCase = Lesson.objects.create(id='ran111')
 
+    def tearDown(self):
+        self.testCase.delete()
+
     def test_get_lesson_success(self):
         """An existing lesson is successfully retrieved"""
         self.assertEqual(Lesson.get('ran111').id, 'ran111')
@@ -20,17 +23,14 @@ class LessonTestCase(TestCase):
         """Getting a non-existent lesson should throw an ObjectDoesNotExist error"""
         self.assertRaises(ObjectDoesNotExist, Lesson.get, 'non123')
 
-    def test_add_participants_from_zero(self):
-        """Adding a participant should increase participants from 0 to 1"""
-        self.testCase.participants = 0
-        self.testCase.add_participant()
-        self.assertEqual(self.testCase.participants, 1)
 
-    def test_add_participants_from_nine(self):
-        """Adding a participant should increase participants from 9 to 10"""
-        self.testCase.participants = 9
-        self.testCase.add_participant()
-        self.assertEqual(self.testCase.participants, 10)
+class BoredTestCase(TestCase):
+
+    def setUp(self):
+        self.testCase = Lesson.objects.create(id='ran111')
+
+    def tearDown(self):
+        self.testCase.delete()
 
     def test_add_bored_from_zero(self):
         """Adding a participant should increase participants from 0 to 1"""
@@ -49,6 +49,33 @@ class LessonTestCase(TestCase):
         self.testCase.amount_bored = 18
         self.testCase.clear_bored()
         self.assertEqual(self.testCase.amount_bored, 0)
+
+
+class ParticipantsTestCase(TestCase):
+
+    def setUp(self):
+        self.testCase = Lesson.objects.create(id='ran111')
+
+    def tearDown(self):
+        self.testCase.delete()
+
+    def test_add_participants_from_zero(self):
+        """Adding a participant should increase participants from 0 to 1"""
+        self.testCase.participants = 0
+        self.testCase.add_participant()
+        self.assertEqual(self.testCase.participants, 1)
+
+    def test_add_participants_from_nine(self):
+        """Adding a participant should increase participants from 9 to 10"""
+        self.testCase.participants = 9
+        self.testCase.add_participant()
+        self.assertEqual(self.testCase.participants, 10)
+
+
+class DeleteTestCase(TestCase):
+
+    def setUp(self):
+        self.testCase = Lesson.objects.create(id='ran111')
 
     def test_delete_case(self):
         """Running the end lesson function should delete the lesson"""
