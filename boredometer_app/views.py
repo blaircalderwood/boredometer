@@ -40,6 +40,11 @@ def create(req, lesson_id=''):
     return redirect('view_lesson', lesson_id=lesson.id)
 
 
+def share_lesson(req, lesson_id):
+    lesson = Lesson.get(lesson_id)
+    return render(req, 'share_lesson.html', {'lesson': lesson})
+
+
 def view_lesson(req, lesson_id):
     lesson = Lesson.get(lesson_id)
     return render(req, 'view_lesson.html', {'lesson': lesson})

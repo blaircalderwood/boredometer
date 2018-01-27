@@ -15,4 +15,5 @@ urlpatterns = [
     path('lesson/<str:lesson_id>/update', main_views.update_teachers_lesson, name='update_lesson'),
     path('lesson/<str:lesson_id>/nextsection', main_views.next_section, name='next_section'),
     path('lesson/<str:lesson_id>/end', main_views.end_lesson, name='end_lesson'),
+    path('share/<str:lesson_id>/', main_views.share_lesson, name='share_lesson'),
 ]
