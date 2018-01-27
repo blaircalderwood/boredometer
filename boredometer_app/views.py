@@ -26,7 +26,6 @@ def main_screen(req):
 
 def create(req, lesson_id=''):
 
-    lesson_id = lesson_id
     if lesson_id is not '':
         try:
             lesson = Lesson.get(lesson_id)
@@ -62,8 +61,7 @@ def bored(req, lesson_id):
 
 def clear_bored(req, lesson_id):
     lesson = Lesson.get(lesson_id)
-    lesson.amount_bored = 0
-    lesson.save()
+    lesson.clear_bored()
     return render(req, 'view_lesson.html', {'lesson': lesson})
 
 

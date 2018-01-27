@@ -26,5 +26,10 @@ class Lesson(models.Model):
         self.amount_bored += 1
         self.save()
 
+    def clear_bored(self):
+        self.amount_bored = 0
+        self.save()
+
     def end(self):
         self.delete()
+
