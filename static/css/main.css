@@ -14,3 +14,7 @@
 
 .header-logo {
   margin: 15px 0; }
+
+.link--success {
+  border-color: #5AC328 !important;
+  color: #5AC328 !important; }

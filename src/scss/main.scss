@@ -1,3 +1,5 @@
+$green: #5AC328;
+
 @import "lesson-signup";
 
 .button--full-width {
@@ -10,4 +12,13 @@
 
 .header-logo {
     margin: 15px 0;
+}
+
+label {
+    // @extend .form-label;
+}
+
+.link--success {
+    border-color: $green !important;
+    color: $green !important;
 }

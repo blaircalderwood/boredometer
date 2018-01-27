@@ -1,6 +1,8 @@
 const mods = {
-    refreshScreen: require('./refresh-screen')
-}
+    refreshScreen: require('./refresh-screen'),
+    submitVote: require('./submit-vote')
+};
+
 
 const _modules = _('[data-mod]');
 
