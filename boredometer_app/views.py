@@ -40,6 +40,11 @@ def create(req, lesson_id=''):
     return redirect('view_lesson', lesson_id=lesson.id)
 
 
+def share_lesson(req, lesson_id):
+    lesson = Lesson.get(lesson_id)
+    return render(req, 'share_lesson.html', {'lesson': lesson})
+
+
 def view_lesson(req, lesson_id):
     lesson = Lesson.get(lesson_id)
     return render(req, 'view_lesson.html', {'lesson': lesson})
@@ -55,7 +60,7 @@ def next_section(req, lesson_id):
 def end_lesson(req, lesson_id):
     lesson = Lesson.get(lesson_id)
     lesson.delete()
-    return render(req, 'main_screen.html')
+    return redirect('main_screen')
 
 
 def update_teachers_lesson(req, lesson_id):
