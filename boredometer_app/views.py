@@ -7,9 +7,12 @@ from boredometer_app.logic.random_id import RandomId
 
 
 def voting_screen(req, lesson_id):
-    lesson = Lesson.get(lesson_id)
-    lesson.add_participant()
-    return render(req, 'voting_screen.html', {'lesson': lesson})
+    try:
+        lesson = Lesson.get(lesson_id)
+        lesson.add_participant()
+        return render(req, 'voting_screen.html', {'lesson': lesson, 'sectionNumber': lesson.section_number})
+    except ObjectDoesNotExist:
+        return render(req, 'no_lesson_found.html')
 
 
 def main_screen(req):
@@ -42,6 +45,19 @@ def view_lesson(req, lesson_id):
     return render(req, 'view_lesson.html', {'lesson': lesson})
 
 
+def next_section(req, lesson_id):
+    lesson = Lesson.get(lesson_id)
+    lesson.clear_bored()
+    lesson.next_section()
+    return render(req, 'view_lesson.html', {'lesson': lesson})
+
+
+def end_lesson(req, lesson_id):
+    lesson = Lesson.get(lesson_id)
+    lesson.delete()
+    return render(req, 'main_screen.html')
+
+
 def update_teachers_lesson(req, lesson_id):
     lesson = Lesson.get(lesson_id)
     return JsonResponse({'amount_bored': lesson.amount_bored, 'participants': lesson.participants})
@@ -60,15 +76,3 @@ def bored(req, lesson_id):
     lesson.add_to_bored()
     return JsonResponse({'success': True})
 
-
-def next_section(req, lesson_id):
-    lesson = Lesson.get(lesson_id)
-    lesson.clear_bored()
-    lesson.next_section()
-    return render(req, 'view_lesson.html', {'lesson': lesson})
-
-
-def end_lesson(req, lesson_id):
-    lesson = Lesson.get(lesson_id)
-    lesson.delete()
-    return render(req, 'main_screen.html')
