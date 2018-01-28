@@ -52,8 +52,9 @@ def create(req, lesson_id=''):
 def share_lesson(req, lesson_id):
 	lesson = Lesson.get(lesson_id)
 	base_url = req.META['HTTP_HOST']
-	qr_code = GenerateQR.create(base_url + '/vote/' + lesson_id)
-	return render(req, 'share_lesson.html', {'lesson': lesson, 'qrCode': qr_code})
+	url = base_url + '/vote/' + lesson_id
+	qr_code = GenerateQR.create(url)
+	return render(req, 'share_lesson.html', {'lesson': lesson, 'qrCode': qr_code, 'url': url})
 
 
 def view_lesson(req, lesson_id):

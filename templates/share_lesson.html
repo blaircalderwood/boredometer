@@ -1,1 +1,12 @@
-<img src="{{ qrCode }}">
+{% extends 'base_template.html' %}
+
+{% block content %}
+
+<div class="text-center">
+    <h1>Lesson ID: {{ lesson.id }}</h1>
+    <div class="text-red h2">{{ url }}</div>
+
+    <img src="{{ qrCode }}">
+
+</div>
+{% endblock %}

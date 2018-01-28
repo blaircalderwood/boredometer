@@ -1,6 +1,11 @@
 module.exports = () => {
     const _timer = _('.js-timer');
 
+    _('.js-share-lesson')[0]
+        .addEventListener('click', function() {
+            window.open(this.href, '_blank', 'height=450, width=650, left=20, location=no, top=20, titlebar=no, menubar=no');
+        });  
+
     function enableNextSection() {
         _(document.lessonControl).find('[type=submit]')[0].removeAttribute('disabled');
         _('.js-next-section').removeClass('hide');
