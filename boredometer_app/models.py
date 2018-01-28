@@ -23,7 +23,8 @@ class Lesson(models.Model):
 	def add_participant(self, participant_id=''):
 		try:
 			if participant_id is not '':
-				participant = Participant.objects.get(id=participant_id, lesson=self)
+				participant = Participant.objects.get(id=participant_id)
+				participant.lesson = self
 			else:
 				participant = self.increase_participants()
 		except ObjectDoesNotExist:

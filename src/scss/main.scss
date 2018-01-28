@@ -9,6 +9,10 @@ $grey: #898989;
 
 .home {
     padding-bottom: 136px;
+
+    @media (min-width: 960px) {
+        padding-bottom: 0;
+    }
 }
 
 .header-logo {
@@ -25,6 +29,16 @@ label {
             cursor: none;
         }
     }
+}
+
+.button--disabled,
+[disabled] {
+    background-color: $grey !important;
+
+    &:hover {
+        cursor: none;
+    }
+
 }
 
 .link--success {
@@ -54,5 +68,20 @@ label {
         left: 20px;
         right: 20px;
         padding: 20px;
+    }
+}
+
+.timer {
+    font-size: 12rem;
+}
+
+.form-error-message {
+    display: none;
+}
+
+
+.form--error {
+    .form-error-message {
+        display: block;
     }
 }

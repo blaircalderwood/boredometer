@@ -19,17 +19,20 @@
                 Make learning efficient
             </div>
         </div>
-
-        <p class="text-lead text-center pb-0">
-            To get started, enter the ID of the room you 
-            want to participate in.
-        </p>
     </div>
 
     <div class="lesson-signup">
         <div class="container">
+            <p class="text-lead pb-0">
+                To get started, enter the ID of the room you 
+                want to participate in.
+            </p>
             <div class="row">
-                <form class="col-md-6" action="/" method="post" id="lesson-id-form">
+                <form action="/" method="post" id="lesson-id-form" class="col {{error}}">
+                    <p class="form-error-message text-red">
+                        That lesson ID does not exist.
+                    </p>
+                    
                     {% csrf_token %}
                     {{ form }}
                 </form>
@@ -48,4 +51,6 @@
             </div>
         </div>
     </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.12.0/validate.min.js"></script>
 {% endblock %}

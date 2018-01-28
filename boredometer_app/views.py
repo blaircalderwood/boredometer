@@ -32,7 +32,7 @@ def main_screen(req):
 				Lesson.get(cleaned_form['lesson_id'])
 				return redirect('vote', lesson_id=cleaned_form['lesson_id'])
 			except ObjectDoesNotExist:
-				return render(req, 'main_screen.html', {'form': JoinForm, 'error': 'no_session_id'})
+				return render(req, 'main_screen.html', {'form': JoinForm, 'error': 'form--error'})
 
 	return render(req, 'main_screen.html', {'form': JoinForm})
 

@@ -5,4 +5,8 @@
     right: 0;
     background: #ffffff;
     padding-top: 1rem;
+
+    @media (min-width: 960px) {
+        position: relative;
+    }
 }

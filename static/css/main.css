@@ -5,18 +5,31 @@
   right: 0;
   background: #ffffff;
   padding-top: 1rem; }
+  @media (min-width: 960px) {
+    .lesson-signup {
+      position: relative; } }
 
 .button--full-width {
   width: 100%; }
 
 .home {
   padding-bottom: 136px; }
+  @media (min-width: 960px) {
+    .home {
+      padding-bottom: 0; } }
 
 .header-logo {
   margin: 15px 0; }
 
 .voting--disabled .vote-section__links:hover {
   cursor: none; }
+
+.button--disabled,
+[disabled] {
+  background-color: #898989 !important; }
+  .button--disabled:hover,
+  [disabled]:hover {
+    cursor: none; }
 
 .link--success {
   border-color: #5AC328 !important;
@@ -41,3 +54,12 @@
   left: 20px;
   right: 20px;
   padding: 20px; }
+
+.timer {
+  font-size: 12rem; }
+
+.form-error-message {
+  display: none; }
+
+.form--error .form-error-message {
+  display: block; }

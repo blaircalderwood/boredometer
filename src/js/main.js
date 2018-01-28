@@ -12,6 +12,6 @@ if(_modules) {
             return sum + (val.charAt(0).toUpperCase() + val.slice(1));
         }, '');
 
-        mods[name.charAt(0).toLowerCase() + name.slice(1)]();
+        mods[name.charAt(0).toLowerCase() + name.slice(1)](mod);
     });
 }
