@@ -10,7 +10,6 @@ from boredometer_app.logic.generate_qr import GenerateQR
 def voting_screen(req, lesson_id, participant_id=''):
 	try:
 		lesson = Lesson.get(lesson_id)
-		lesson.add_participant(participant_id)
 		return render(req, 'voting_screen.html', {'lesson': lesson, 'sectionNumber': lesson.section_number})
 	except ObjectDoesNotExist:
 		return redirect('end_lesson')

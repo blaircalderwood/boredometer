@@ -24,7 +24,9 @@ class Lesson(models.Model):
 		try:
 			if participant_id is not '':
 				participant = Participant.objects.get(id=participant_id)
-				participant.lesson = self
+				print(participant, participant.lesson)
+				if participant.lesson.id != self.id:
+					participant = self.increase_participants()
 			else:
 				participant = self.increase_participants()
 		except ObjectDoesNotExist:

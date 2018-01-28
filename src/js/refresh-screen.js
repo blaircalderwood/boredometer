@@ -12,14 +12,15 @@ module.exports = () => {
     }
 
     function _update() {
-        const timeElapsed = Math.floor(-(localStorage.getItem('startTime') - new Date().getTime()) / 1000);
-        let hours = Math.floor(timeElapsed / 3600);
-        const mins = `0${Math.floor(timeElapsed / 60)}`.slice(-2);
-        const secs = `0${Math.floor(timeElapsed)}`.slice(-2);
-        hours = hours ? `0${hours}:`.slice(-2) : '';
+        // const timeElapsed = (localStorage.getItem('startTime') - new Date().getMilliseconds()) / 1000;
+        // console.log(timeElapsed)
+        // let hours = Math.floor(timeElapsed / 3600);
+        // const mins = `0${Math.floor(timeElapsed / 60)}`.slice(-2);
+        // const secs = `0${Math.floor(timeElapsed)}`.slice(-2);
+        // hours = hours ? `0${hours}:`.slice(-2) : '';
 
-        _timer[0].innerText = `${hours}${mins}:${secs}`;
-        window.setInterval(_update, 100);
+        // _timer[0].innerText = `${hours}${mins}:${secs}`;
+        // window.setInterval(_update, 100);
     }
 
     setInterval(() => {
@@ -28,7 +29,7 @@ module.exports = () => {
 
             if(data.participants) {
                 if(!localStorage.getItem('startTime')) {
-                    localStorage.setItem('startTime', new Date().getTime());
+                    localStorage.setItem('startTime', new Date());
                 }
 
                 _update();

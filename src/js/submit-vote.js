@@ -23,9 +23,7 @@ module.exports = (mod) => {
 
 
     $.get(`/addparticipant/${localStorage.getItem('studentLessonId')}${participantId}`, (data) => {
-        if(!participantId) {
-            localStorage.setItem('participantId', data['participantId']);
-        }
+        localStorage.setItem('participantId', data['participantId']);
 
         pollSection();
         
