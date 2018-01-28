@@ -13,6 +13,7 @@ urlpatterns = [
     path('vote/<str:lesson_id>/bored', main_views.bored, name='bored'),
     path('create/', main_views.create, name='create'),
     path('lesson/', main_views.main_screen),
+    path('lesson/ended', main_views.lesson_has_ended, name='student_ended'),
     path('lesson/<str:lesson_id>/', main_views.view_lesson, name='view_lesson'),
     path('lesson/<str:lesson_id>/update', main_views.update_teachers_lesson, name='update_lesson'),
     path('lesson/<str:lesson_id>/nextsection', main_views.next_section, name='next_section'),

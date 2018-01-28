@@ -8,10 +8,14 @@ module.exports = (mod) => {
     function pollSection() {
         setInterval(() => {
             $.get(`/vote/${localStorage.getItem('studentLessonId')}/update`, (data) => {
-                if(data['sectionNumber'] !== parseInt(localStorage.getItem('sectionNumber'))) {
-                    localStorage.setItem('sectionNumber', data['sectionNumber']);
-                    _votedMessage.addClass('hide');
-                    _voteBored.removeClass('voting--disabled');
+                if(data['lessonEnded']) {
+                    window.location = `/lesson/ended`;
+                } else {
+                    if(data['sectionNumber'] !== parseInt(localStorage.getItem('sectionNumber'))) {
+                        localStorage.setItem('sectionNumber', data['sectionNumber']);
+                        _votedMessage.addClass('hide');
+                        _voteBored.removeClass('voting--disabled');
+                    }
                 }
             });
         }, 1000);
@@ -22,6 +26,8 @@ module.exports = (mod) => {
         if(!participantId) {
             localStorage.setItem('participantId', data['participantId']);
         }
+
+        pollSection();
         
         _voteBored.find('.vote-section__links').forEach((link) => {
             link.addEventListener('click', function(e) {
@@ -34,7 +40,6 @@ module.exports = (mod) => {
                         if (data.success) {
                             _votedMessage.removeClass('hide');
                             _voteBored.addClass('voting--disabled');
-                            pollSection();
                         }   
                     });
                 }

@@ -13,7 +13,7 @@ def voting_screen(req, lesson_id, participant_id=''):
 		lesson.add_participant(participant_id)
 		return render(req, 'voting_screen.html', {'lesson': lesson, 'sectionNumber': lesson.section_number})
 	except ObjectDoesNotExist:
-		return render(req, 'no_lesson_found.html')
+		return redirect('end_lesson')
 
 
 def add_to_participants(req, lesson_id, participant_id=''):
@@ -72,7 +72,10 @@ def next_section(req, lesson_id):
 def end_lesson(req, lesson_id):
 	lesson = Lesson.get(lesson_id)
 	lesson.delete()
-	return redirect('main_screen')
+	return render(req, 'end_lesson.html', {'lesson': lesson})
+
+def lesson_has_ended(req):
+	return render(req, 'end_lesson.html')
 
 
 def update_teachers_lesson(req, lesson_id):
@@ -85,8 +88,8 @@ def update_students_lesson(req, lesson_id):
 		lesson = Lesson.get(lesson_id)
 		return JsonResponse({'success': True, 'lesson.id': lesson.id, 'sectionNumber': lesson.section_number})
 	except ObjectDoesNotExist:
-		return JsonResponse({'success': False})
-
+		return JsonResponse({'lessonEnded': True})
+		
 
 def bored(req, lesson_id):
 	lesson = Lesson.get(lesson_id)
