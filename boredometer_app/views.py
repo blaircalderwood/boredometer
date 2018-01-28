@@ -1,15 +1,16 @@
 from django.shortcuts import render, redirect
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from django.core.exceptions import ObjectDoesNotExist
 from boredometer_app.forms import JoinForm
 from boredometer_app.models import Lesson
 from boredometer_app.logic.random_id import RandomId
+from boredometer_app.logic.generate_qr import GenerateQR
 
 
 def voting_screen(req, lesson_id, participant_id=''):
 	try:
 		lesson = Lesson.get(lesson_id)
-		participant_id = lesson.add_participant(participant_id)
+		lesson.add_participant(participant_id)
 		return render(req, 'voting_screen.html', {'lesson': lesson, 'sectionNumber': lesson.section_number})
 	except ObjectDoesNotExist:
 		return render(req, 'no_lesson_found.html')
@@ -50,7 +51,9 @@ def create(req, lesson_id=''):
 
 def share_lesson(req, lesson_id):
 	lesson = Lesson.get(lesson_id)
-	return render(req, 'share_lesson.html', {'lesson': lesson})
+	base_url = req.META['HTTP_HOST']
+	qr_code = GenerateQR.create(base_url + '/vote/' + lesson_id)
+	return render(req, 'share_lesson.html', {'lesson': lesson, 'qrCode': qr_code})
 
 
 def view_lesson(req, lesson_id):
