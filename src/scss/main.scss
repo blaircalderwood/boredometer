@@ -1,6 +1,7 @@
 $green: #5AC328;
 $grey: #898989;
 
+@import "../../node_modules/@fakesamgregory/brand/scss/brand";
 @import "lesson-signup";
 
 .button--full-width {
@@ -21,6 +22,10 @@ $grey: #898989;
 
 label {
     // @extend .form-label;
+}
+
+button {
+    box-sizing: inherit;
 }
 
 .voting--disabled {
