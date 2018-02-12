@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
-            failures="0"
-            tests="7">
+<testsuites errors="1"
+            failures="1"
+            tests="8">
 
   <testsuite name="test"
-    errors="0" failures="0" hostname="" id="" package="test" skipped="0"
-    tests="7" time="38.72" timestamp="Mon, 12 Feb 2018 22:35:37 GMT">
+    errors="1" failures="1" hostname="" id="" package="test" skipped="6"
+    tests="8" time="20.01" timestamp="Mon, 12 Feb 2018 22:50:15 GMT">
   
-    <testcase name="Creating lesson should set lecturerLessonID" classname="test" time="6.303" assertions="3">
+    <testcase name="Creating lesson should set lecturerLessonID" classname="test" time="12.93" assertions="3">
 
     
 
@@ -16,83 +16,64 @@
     
     </testcase>
   
-    <testcase name="User should be able to enter with lecturerID" classname="test" time="5.233" assertions="3">
+    <testcase name="User should be able to enter with lecturerID" classname="test" time="7.078" assertions="3">
 
     
 
-    
-
-    
-    </testcase>
-  
-    <testcase name="Lecturer should reflect number of students" classname="test" time="6.068" assertions="4">
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Lecturer should not be able to skip section" classname="test" time="4.981" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Student voting down should reflect on lecturer" classname="test" time="5.024" assertions="6">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="lecturer should be able to skip after total down votes" classname="test" time="5.029" assertions="8">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Student should be able to vote again after next section" classname="test" time="6.085" assertions="4">
-
-    
-
-    
-
-    
+      <failure message="Testing if element &lt;.vote-section&gt; contains text: &#34;8vzqvb&#34;. Element could not be located.">    at Object.&lt;anonymous&gt; (/Users/samgregory/Sites/boredometer/tests/lecturer-journeys.js:35:29)</failure>
 
     
     </testcase>
   
 
   
+    <system-err>
+      ERROR: Unable to locate element: &#34;.vote-section&#34; using: css selector
+    at F.command (/Users/samgregory/Sites/boredometer/node_modules/nightwatch/lib/api/assertions/containsText.js:46:21)
+    at F.module.exports.BaseAssertion._scheduleAssertion (/Users/samgregory/Sites/boredometer/node_modules/nightwatch/lib/core/assertion.js:87:17)
+    at F.module.exports.BaseAssertion._executeCommand (/Users/samgregory/Sites/boredometer/node_modules/nightwatch/lib/core/assertion.js:82:17)
+    at AssertionInstance.commandFn [as _commandFn] (/Users/samgregory/Sites/boredometer/node_modules/nightwatch/lib/core/assertion.js:180:21)
+    at AsyncTree.runCommand (/Users/samgregory/Sites/boredometer/node_modules/nightwatch/lib/core/queue.js:154:30)
+    at AsyncTree.runChildNode (/Users/samgregory/Sites/boredometer/node_modules/nightwatch/lib/core/queue.js:114:8)
+    at AsyncTree.walkDown (/Users/samgregory/Sites/boredometer/node_modules/nightwatch/lib/core/queue.js:80:10)
+    at AsyncTree.walkUp (/Users/samgregory/Sites/boredometer/node_modules/nightwatch/lib/core/queue.js:97:8)
+    at AsyncTree.walkDown (/Users/samgregory/Sites/boredometer/node_modules/nightwatch/lib/core/queue.js:90:12)
+    at AsyncTree.traverse (/Users/samgregory/Sites/boredometer/node_modules/nightwatch/lib/core/queue.js:73:8)
+    </system-err>
+  
 
+  
+    
+    <testcase
+      name="Lecturer should reflect number of students" classname="test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Lecturer should not be able to skip section" classname="test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Student voting down should reflect on lecturer" classname="test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="lecturer should be able to skip after total down votes" classname="test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Student should be able to vote again after next section" classname="test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="End session should end for both student and lecturer" classname="test">
+      <skipped />
+    </testcase>
+    
   
   </testsuite>
 </testsuites>

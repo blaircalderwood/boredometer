@@ -1,380 +1,437 @@
-Feb 12, 2018 10:35:12 PM org.openqa.grid.selenium.GridLauncher main
+Feb 12, 2018 10:52:15 PM org.openqa.grid.selenium.GridLauncher main
 INFO: Launching a standalone server
-22:35:37.690 INFO - Java: Oracle Corporation 25.101-b13
-22:35:37.691 INFO - OS: Mac OS X 10.13.3 x86_64
-22:35:37.702 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
-22:35:37.804 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match with current platform: MAC
-22:35:37.844 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
-22:35:37.845 INFO - Version Jetty/5.1.x
-22:35:37.846 INFO - Started HttpContext[/selenium-server,/selenium-server]
-22:35:37.912 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@77f03bb1
-22:35:37.912 INFO - Started HttpContext[/wd,/wd]
-22:35:37.912 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
-22:35:37.912 INFO - Started HttpContext[/,/]
-22:35:37.922 INFO - Started SocketListener on 0.0.0.0:4444
-22:35:37.923 INFO - Started org.openqa.jetty.jetty.Server@27bc2616
-22:35:38.245 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]] at URL: /session)
-22:35:38.260 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]
-Starting ChromeDriver 2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef) on port 12368
+22:52:40.725 INFO - Java: Oracle Corporation 25.101-b13
+22:52:40.726 INFO - OS: Mac OS X 10.13.3 x86_64
+22:52:40.736 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+22:52:40.831 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match with current platform: MAC
+22:52:40.875 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+22:52:40.876 INFO - Version Jetty/5.1.x
+22:52:40.878 INFO - Started HttpContext[/selenium-server,/selenium-server]
+22:52:40.921 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@77f03bb1
+22:52:40.921 INFO - Started HttpContext[/wd,/wd]
+22:52:40.921 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+22:52:40.921 INFO - Started HttpContext[/,/]
+22:52:40.928 INFO - Started SocketListener on 0.0.0.0:4444
+22:52:40.928 INFO - Started org.openqa.jetty.jetty.Server@27bc2616
+22:52:41.329 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Lecturer Journeys, browserName=chrome, javascriptEnabled=true, platform=ANY}]] at URL: /session)
+22:52:41.353 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Lecturer Journeys, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef) on port 23743
 Only local connections are allowed.
-22:35:41.732 INFO - Done: /session
-22:35:41.758 INFO - Executing: [get: http://127.0.0.1:8000] at URL: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2/url)
-22:35:43.245 INFO - Done: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2/url
-22:35:43.261 INFO - Executing: [find elements: By.selector: a[href="/create/"]] at URL: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2/elements)
-22:35:43.332 INFO - Done: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2/elements
-22:35:43.340 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (3f933ebb78bdc3c05d6d818b08132c0d)] -> css selector: a[href="/create/"]]] at URL: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2/element/0/displayed)
-22:35:43.377 INFO - Done: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2/element/0/displayed
-22:35:43.384 INFO - Executing: [find element: By.selector: a[href="/create/"]] at URL: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2/element)
-22:35:43.419 INFO - Done: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2/element
-22:35:43.425 INFO - Executing: [click: 0 [[ChromeDriver: chrome on MAC (3f933ebb78bdc3c05d6d818b08132c0d)] -> css selector: a[href="/create/"]]] at URL: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2/element/0/click)
-22:35:43.607 INFO - Done: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2/element/0/click
-22:35:43.612 INFO - Executing: [find elements: By.selector: [data-mod="refresh-screen"]] at URL: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2/elements)
-22:35:43.636 INFO - Done: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2/elements
-22:35:43.639 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (3f933ebb78bdc3c05d6d818b08132c0d)] -> css selector: [data-mod="refresh-screen"]]] at URL: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2/element/1/displayed)
-22:35:43.663 INFO - Done: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2/element/1/displayed
-22:35:43.668 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
+22:52:44.673 INFO - Done: /session
+22:52:44.692 INFO - Executing: [get: http://127.0.0.1:8000] at URL: /session/8b093922-8def-4432-aba5-b1f919453765/url)
+22:52:46.038 INFO - Done: /session/8b093922-8def-4432-aba5-b1f919453765/url
+22:52:46.051 INFO - Executing: [find elements: By.selector: a[href="/create/"]] at URL: /session/8b093922-8def-4432-aba5-b1f919453765/elements)
+22:52:46.154 INFO - Done: /session/8b093922-8def-4432-aba5-b1f919453765/elements
+22:52:46.164 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (99e901c9c421f01a985f001d27a37dfa)] -> css selector: a[href="/create/"]]] at URL: /session/8b093922-8def-4432-aba5-b1f919453765/element/0/displayed)
+22:52:46.205 INFO - Done: /session/8b093922-8def-4432-aba5-b1f919453765/element/0/displayed
+22:52:46.212 INFO - Executing: [find element: By.selector: a[href="/create/"]] at URL: /session/8b093922-8def-4432-aba5-b1f919453765/element)
+22:52:46.241 INFO - Done: /session/8b093922-8def-4432-aba5-b1f919453765/element
+22:52:46.244 INFO - Executing: [click: 0 [[ChromeDriver: chrome on MAC (99e901c9c421f01a985f001d27a37dfa)] -> css selector: a[href="/create/"]]] at URL: /session/8b093922-8def-4432-aba5-b1f919453765/element/0/click)
+22:52:46.409 INFO - Done: /session/8b093922-8def-4432-aba5-b1f919453765/element/0/click
+22:52:46.413 INFO - Executing: [find elements: By.selector: [data-mod="refresh-screen"]] at URL: /session/8b093922-8def-4432-aba5-b1f919453765/elements)
+22:52:46.433 INFO - Done: /session/8b093922-8def-4432-aba5-b1f919453765/elements
+22:52:46.436 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (99e901c9c421f01a985f001d27a37dfa)] -> css selector: [data-mod="refresh-screen"]]] at URL: /session/8b093922-8def-4432-aba5-b1f919453765/element/1/displayed)
+22:52:46.460 INFO - Done: /session/8b093922-8def-4432-aba5-b1f919453765/element/1/displayed
+22:52:46.466 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
                 return window.localStorage.getItem('lecturerLessonId');
-            }.apply(window, passedArgs);, []] at URL: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2/execute)
-22:35:43.682 INFO - Done: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2/execute
-22:35:43.690 INFO - Executing: [delete session: 9da53eb5-4326-4a40-8636-fd4e0b7982b2] at URL: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2)
-22:35:44.329 INFO - Done: /session/9da53eb5-4326-4a40-8636-fd4e0b7982b2
-22:35:44.341 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]] at URL: /session)
-22:35:44.342 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]
-Starting ChromeDriver 2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef) on port 9558
+            }.apply(window, passedArgs);, []] at URL: /session/8b093922-8def-4432-aba5-b1f919453765/execute)
+22:52:46.478 INFO - Done: /session/8b093922-8def-4432-aba5-b1f919453765/execute
+22:52:46.484 INFO - Executing: [delete session: 8b093922-8def-4432-aba5-b1f919453765] at URL: /session/8b093922-8def-4432-aba5-b1f919453765)
+22:52:47.076 INFO - Done: /session/8b093922-8def-4432-aba5-b1f919453765
+22:52:47.093 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Lecturer Journeys, browserName=chrome, javascriptEnabled=true, platform=ANY}]] at URL: /session)
+22:52:47.095 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Lecturer Journeys, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef) on port 10365
 Only local connections are allowed.
-22:35:45.903 INFO - Done: /session
-22:35:45.910 INFO - Executing: [get: http://127.0.0.1:8000] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/url)
-22:35:47.240 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/url
-22:35:47.247 INFO - Executing: [find elements: By.selector: a[href="/create/"]] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/elements)
-22:35:47.274 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/elements
-22:35:47.278 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (8527aad4671381fcde5fa2ef92b07b75)] -> css selector: a[href="/create/"]]] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/element/0/displayed)
-22:35:47.297 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/element/0/displayed
-22:35:47.300 INFO - Executing: [find element: By.selector: a[href="/create/"]] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/element)
-22:35:47.320 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/element
-22:35:47.323 INFO - Executing: [click: 0 [[ChromeDriver: chrome on MAC (8527aad4671381fcde5fa2ef92b07b75)] -> css selector: a[href="/create/"]]] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/element/0/click)
-22:35:47.491 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/element/0/click
-22:35:47.496 INFO - Executing: [find elements: By.selector: [data-mod="refresh-screen"]] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/elements)
-22:35:47.527 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/elements
-22:35:47.530 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (8527aad4671381fcde5fa2ef92b07b75)] -> css selector: [data-mod="refresh-screen"]]] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/element/1/displayed)
-22:35:47.561 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/element/1/displayed
-22:35:47.564 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
+22:52:48.712 INFO - Done: /session
+22:52:48.721 INFO - Executing: [get: http://127.0.0.1:8000] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/url)
+22:52:50.481 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/url
+22:52:50.491 INFO - Executing: [find elements: By.selector: a[href="/create/"]] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/elements)
+22:52:50.515 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/elements
+22:52:50.521 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (f76a2e350692ada543f85e83ed021432)] -> css selector: a[href="/create/"]]] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element/0/displayed)
+22:52:50.542 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element/0/displayed
+22:52:50.546 INFO - Executing: [find element: By.selector: a[href="/create/"]] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element)
+22:52:50.574 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element
+22:52:50.577 INFO - Executing: [click: 0 [[ChromeDriver: chrome on MAC (f76a2e350692ada543f85e83ed021432)] -> css selector: a[href="/create/"]]] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element/0/click)
+22:52:50.743 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element/0/click
+22:52:50.746 INFO - Executing: [find elements: By.selector: [data-mod="refresh-screen"]] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/elements)
+22:52:50.764 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/elements
+22:52:50.767 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (f76a2e350692ada543f85e83ed021432)] -> css selector: [data-mod="refresh-screen"]]] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element/1/displayed)
+22:52:50.787 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element/1/displayed
+22:52:50.790 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
                 return window.localStorage.getItem('lecturerLessonId');
-            }.apply(window, passedArgs);, []] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/execute)
-22:35:47.580 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/execute
-22:35:47.584 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (url) {
+            }.apply(window, passedArgs);, []] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/execute)
+22:52:50.802 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/execute
+22:52:50.807 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (url) {
                 window.open(url);
-            }.apply(window, passedArgs);, [http://127.0.0.1:8000]] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/execute)
-22:35:47.638 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/execute
-22:35:47.643 INFO - Executing: [get window handles] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/window_handles)
-22:35:47.692 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/window_handles
-22:35:47.702 INFO - Executing: [switch to window: CDwindow-(C647C11CAE74BCAEE7E70292AF82DEDC)] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/window)
-22:35:47.736 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/window
-22:35:47.749 INFO - Executing: [find element: By.selector: [name="lesson_id"]] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/element)
-22:35:48.032 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/element
-22:35:48.040 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (8527aad4671381fcde5fa2ef92b07b75)] -> css selector: [name="lesson_id"]], [5, k, a, 6, d, t]] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/element/2/value)
-22:35:48.148 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/element/2/value
-22:35:48.157 INFO - Executing: [find element: By.selector: [form="lesson-id-form"]] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/element)
-22:35:48.309 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/element
-22:35:48.313 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (8527aad4671381fcde5fa2ef92b07b75)] -> css selector: [form="lesson-id-form"]]] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/element/3/click)
-22:35:48.604 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/element/3/click
-22:35:48.615 INFO - Executing: [find element: By.selector: .vote-section] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/element)
-22:35:48.747 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/element
-22:35:48.762 INFO - Executing: [get text: 4 [[ChromeDriver: chrome on MAC (8527aad4671381fcde5fa2ef92b07b75)] -> css selector: .vote-section]] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973/element/4/text)
-22:35:48.919 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973/element/4/text
-22:35:48.924 INFO - Executing: [delete session: e4bf5955-925a-4693-a353-8886c45ea973] at URL: /session/e4bf5955-925a-4693-a353-8886c45ea973)
-22:35:49.567 INFO - Done: /session/e4bf5955-925a-4693-a353-8886c45ea973
-22:35:49.573 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]] at URL: /session)
-22:35:49.574 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]
-Starting ChromeDriver 2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef) on port 2830
+            }.apply(window, passedArgs);, [http://127.0.0.1:8000]] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/execute)
+22:52:50.858 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/execute
+22:52:50.862 INFO - Executing: [get window handles] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/window_handles)
+22:52:50.902 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/window_handles
+22:52:50.923 INFO - Executing: [switch to window: CDwindow-(29C13C909EEEBD21FD61759311DEEFE3)] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/window)
+22:52:50.959 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/window
+22:52:50.988 INFO - Executing: [find element: By.selector: [name="lesson_id"]] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element)
+22:52:51.228 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element
+22:52:51.240 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (f76a2e350692ada543f85e83ed021432)] -> css selector: [name="lesson_id"]], [v, z, 2, m, t, w]] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element/2/value)
+22:52:51.344 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element/2/value
+22:52:51.347 INFO - Executing: [find element: By.selector: [form="lesson-id-form"]] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element)
+22:52:51.367 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element
+22:52:51.370 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (f76a2e350692ada543f85e83ed021432)] -> css selector: [form="lesson-id-form"]]] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element/3/click)
+22:52:51.526 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element/3/click
+22:52:51.531 INFO - Executing: [find elements: By.selector: .vote-section__links] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/elements)
+22:52:51.555 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/elements
+22:52:51.557 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on MAC (f76a2e350692ada543f85e83ed021432)] -> css selector: .vote-section__links]] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element/4/displayed)
+22:52:51.574 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element/4/displayed
+22:52:51.579 INFO - Executing: [switch to window: CDwindow-(B43D15B880E84BBEDCC606D0C29B64AE)] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/window)
+22:52:51.607 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/window
+22:52:52.614 INFO - Executing: [find element: By.selector: #participants] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element)
+22:52:52.634 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element
+22:52:52.641 INFO - Executing: [get text: 5 [[ChromeDriver: chrome on MAC (f76a2e350692ada543f85e83ed021432)] -> css selector: #participants]] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element/5/text)
+22:52:52.668 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14/element/5/text
+22:52:52.673 INFO - Executing: [delete session: 366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14] at URL: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14)
+22:52:53.375 INFO - Done: /session/366fd3cf-bfa1-4707-bcaf-0dfe2f9f7d14
+22:52:53.380 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Lecturer Journeys, browserName=chrome, javascriptEnabled=true, platform=ANY}]] at URL: /session)
+22:52:53.381 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Lecturer Journeys, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef) on port 47410
 Only local connections are allowed.
-22:35:51.330 INFO - Done: /session
-22:35:51.335 INFO - Executing: [get: http://127.0.0.1:8000] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/url)
-22:35:52.595 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/url
-22:35:52.610 INFO - Executing: [find elements: By.selector: a[href="/create/"]] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/elements)
-22:35:52.653 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/elements
-22:35:52.656 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (52800711546ecf6516a544a917b5f2af)] -> css selector: a[href="/create/"]]] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element/0/displayed)
-22:35:52.695 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element/0/displayed
-22:35:52.702 INFO - Executing: [find element: By.selector: a[href="/create/"]] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element)
-22:35:52.732 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element
-22:35:52.735 INFO - Executing: [click: 0 [[ChromeDriver: chrome on MAC (52800711546ecf6516a544a917b5f2af)] -> css selector: a[href="/create/"]]] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element/0/click)
-22:35:52.955 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element/0/click
-22:35:52.960 INFO - Executing: [find elements: By.selector: [data-mod="refresh-screen"]] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/elements)
-22:35:52.995 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/elements
-22:35:52.998 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (52800711546ecf6516a544a917b5f2af)] -> css selector: [data-mod="refresh-screen"]]] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element/1/displayed)
-22:35:53.029 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element/1/displayed
-22:35:53.033 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
+22:52:54.962 INFO - Done: /session
+22:52:54.968 INFO - Executing: [get: http://127.0.0.1:8000] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/url)
+22:52:56.341 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/url
+22:52:56.345 INFO - Executing: [find elements: By.selector: a[href="/create/"]] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/elements)
+22:52:56.377 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/elements
+22:52:56.380 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (e1f555cc210d4d62d737155731442752)] -> css selector: a[href="/create/"]]] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element/0/displayed)
+22:52:56.400 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element/0/displayed
+22:52:56.405 INFO - Executing: [find element: By.selector: a[href="/create/"]] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element)
+22:52:56.423 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element
+22:52:56.426 INFO - Executing: [click: 0 [[ChromeDriver: chrome on MAC (e1f555cc210d4d62d737155731442752)] -> css selector: a[href="/create/"]]] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element/0/click)
+22:52:56.574 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element/0/click
+22:52:56.578 INFO - Executing: [find elements: By.selector: [data-mod="refresh-screen"]] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/elements)
+22:52:56.599 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/elements
+22:52:56.605 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (e1f555cc210d4d62d737155731442752)] -> css selector: [data-mod="refresh-screen"]]] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element/1/displayed)
+22:52:56.629 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element/1/displayed
+22:52:56.635 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
                 return window.localStorage.getItem('lecturerLessonId');
-            }.apply(window, passedArgs);, []] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/execute)
-22:35:53.047 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/execute
-22:35:53.051 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (url) {
+            }.apply(window, passedArgs);, []] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/execute)
+22:52:56.644 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/execute
+22:52:56.648 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (url) {
                 window.open(url);
-            }.apply(window, passedArgs);, [http://127.0.0.1:8000]] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/execute)
-22:35:53.107 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/execute
-22:35:53.110 INFO - Executing: [get window handles] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/window_handles)
-22:35:53.164 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/window_handles
-22:35:53.172 INFO - Executing: [switch to window: CDwindow-(E472774622EAB2F8F9A295BD0D50EAF8)] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/window)
-22:35:53.185 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/window
-22:35:53.190 INFO - Executing: [find element: By.selector: [name="lesson_id"]] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element)
-22:35:53.490 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element
-22:35:53.497 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (52800711546ecf6516a544a917b5f2af)] -> css selector: [name="lesson_id"]], [v, 7, 0, g, l, d]] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element/2/value)
-22:35:53.599 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element/2/value
-22:35:53.603 INFO - Executing: [find element: By.selector: [form="lesson-id-form"]] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element)
-22:35:53.621 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element
-22:35:53.625 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (52800711546ecf6516a544a917b5f2af)] -> css selector: [form="lesson-id-form"]]] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element/3/click)
-22:35:53.820 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element/3/click
-22:35:53.825 INFO - Executing: [find elements: By.selector: .vote-section__links] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/elements)
-22:35:53.851 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/elements
-22:35:53.857 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on MAC (52800711546ecf6516a544a917b5f2af)] -> css selector: .vote-section__links]] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element/4/displayed)
-22:35:53.876 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element/4/displayed
-22:35:53.880 INFO - Executing: [switch to window: CDwindow-(672037E1B27445A58FD7467A3AED5AAC)] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/window)
-22:35:53.905 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/window
-22:35:54.912 INFO - Executing: [find element: By.selector: #participants] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element)
-22:35:54.934 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element
-22:35:54.940 INFO - Executing: [get text: 5 [[ChromeDriver: chrome on MAC (52800711546ecf6516a544a917b5f2af)] -> css selector: #participants]] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element/5/text)
-22:35:54.971 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10/element/5/text
-22:35:54.975 INFO - Executing: [delete session: 3ac0f7af-9007-4a6d-8852-c53c004e5e10] at URL: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10)
-22:35:55.636 INFO - Done: /session/3ac0f7af-9007-4a6d-8852-c53c004e5e10
-22:35:55.646 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]] at URL: /session)
-22:35:55.651 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]
-Starting ChromeDriver 2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef) on port 14316
+            }.apply(window, passedArgs);, [http://127.0.0.1:8000]] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/execute)
+22:52:56.714 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/execute
+22:52:56.718 INFO - Executing: [get window handles] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/window_handles)
+22:52:56.766 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/window_handles
+22:52:56.775 INFO - Executing: [switch to window: CDwindow-(FF6C42F97B88114C2711BE1A07A9C363)] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/window)
+22:52:56.816 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/window
+22:52:56.839 INFO - Executing: [find element: By.selector: [name="lesson_id"]] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element)
+22:52:57.062 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element
+22:52:57.069 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (e1f555cc210d4d62d737155731442752)] -> css selector: [name="lesson_id"]], [1, 6, o, d, w, c]] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element/2/value)
+22:52:57.176 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element/2/value
+22:52:57.179 INFO - Executing: [find element: By.selector: [form="lesson-id-form"]] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element)
+22:52:57.201 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element
+22:52:57.204 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (e1f555cc210d4d62d737155731442752)] -> css selector: [form="lesson-id-form"]]] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element/3/click)
+22:52:57.326 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element/3/click
+22:52:57.331 INFO - Executing: [switch to window: CDwindow-(EF48F7B2F9668C80504279C4780203C6)] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/window)
+22:52:57.353 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/window
+22:52:57.362 INFO - Executing: [find element: By.selector: .lesson-signup button[type="submit"]] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element)
+22:52:57.388 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element
+22:52:57.391 INFO - Executing: [get element attribute: 4 [[ChromeDriver: chrome on MAC (e1f555cc210d4d62d737155731442752)] -> css selector: .lesson-signup button[type="submit"]], disabled] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element/4/attribute/disabled)
+22:52:57.400 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202/element/4/attribute/disabled
+22:52:57.404 INFO - Executing: [delete session: 8ac38da9-038a-44ff-86a5-b70afc913202] at URL: /session/8ac38da9-038a-44ff-86a5-b70afc913202)
+22:52:58.054 INFO - Done: /session/8ac38da9-038a-44ff-86a5-b70afc913202
+22:52:58.064 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Lecturer Journeys, browserName=chrome, javascriptEnabled=true, platform=ANY}]] at URL: /session)
+22:52:58.065 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Lecturer Journeys, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef) on port 31174
 Only local connections are allowed.
-22:35:57.222 INFO - Done: /session
-22:35:57.228 INFO - Executing: [get: http://127.0.0.1:8000] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/url)
-22:35:58.615 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/url
-22:35:58.624 INFO - Executing: [find elements: By.selector: a[href="/create/"]] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/elements)
-22:35:58.655 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/elements
-22:35:58.668 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (5cacdcd8d3b32747490e8f82ac0a7052)] -> css selector: a[href="/create/"]]] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element/0/displayed)
-22:35:58.696 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element/0/displayed
-22:35:58.702 INFO - Executing: [find element: By.selector: a[href="/create/"]] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element)
-22:35:58.731 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element
-22:35:58.735 INFO - Executing: [click: 0 [[ChromeDriver: chrome on MAC (5cacdcd8d3b32747490e8f82ac0a7052)] -> css selector: a[href="/create/"]]] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element/0/click)
-22:35:58.930 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element/0/click
-22:35:58.935 INFO - Executing: [find elements: By.selector: [data-mod="refresh-screen"]] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/elements)
-22:35:58.962 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/elements
-22:35:58.967 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (5cacdcd8d3b32747490e8f82ac0a7052)] -> css selector: [data-mod="refresh-screen"]]] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element/1/displayed)
-22:35:58.995 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element/1/displayed
-22:35:59.000 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
+22:52:59.563 INFO - Done: /session
+22:52:59.573 INFO - Executing: [get: http://127.0.0.1:8000] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/url)
+22:53:00.927 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/url
+22:53:00.954 INFO - Executing: [find elements: By.selector: a[href="/create/"]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/elements)
+22:53:01.008 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/elements
+22:53:01.014 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (fff9c92511dd9d4cce29707a6577eacd)] -> css selector: a[href="/create/"]]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/0/displayed)
+22:53:01.039 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/0/displayed
+22:53:01.045 INFO - Executing: [find element: By.selector: a[href="/create/"]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element)
+22:53:01.064 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element
+22:53:01.071 INFO - Executing: [click: 0 [[ChromeDriver: chrome on MAC (fff9c92511dd9d4cce29707a6577eacd)] -> css selector: a[href="/create/"]]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/0/click)
+22:53:01.236 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/0/click
+22:53:01.241 INFO - Executing: [find elements: By.selector: [data-mod="refresh-screen"]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/elements)
+22:53:01.261 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/elements
+22:53:01.265 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (fff9c92511dd9d4cce29707a6577eacd)] -> css selector: [data-mod="refresh-screen"]]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/1/displayed)
+22:53:01.285 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/1/displayed
+22:53:01.288 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
                 return window.localStorage.getItem('lecturerLessonId');
-            }.apply(window, passedArgs);, []] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/execute)
-22:35:59.026 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/execute
-22:35:59.033 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (url) {
+            }.apply(window, passedArgs);, []] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/execute)
+22:53:01.296 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/execute
+22:53:01.300 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (url) {
                 window.open(url);
-            }.apply(window, passedArgs);, [http://127.0.0.1:8000]] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/execute)
-22:35:59.160 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/execute
-22:35:59.168 INFO - Executing: [get window handles] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/window_handles)
-22:35:59.186 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/window_handles
-22:35:59.192 INFO - Executing: [switch to window: CDwindow-(43FE0DBE0DC328664D0D5F2195F52F92)] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/window)
-22:35:59.205 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/window
-22:35:59.219 INFO - Executing: [find element: By.selector: [name="lesson_id"]] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element)
-22:35:59.552 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element
-22:35:59.561 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (5cacdcd8d3b32747490e8f82ac0a7052)] -> css selector: [name="lesson_id"]], [d, c, 0, 4, b, 5]] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element/2/value)
-22:35:59.685 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element/2/value
-22:35:59.691 INFO - Executing: [find element: By.selector: [form="lesson-id-form"]] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element)
-22:35:59.714 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element
-22:35:59.717 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (5cacdcd8d3b32747490e8f82ac0a7052)] -> css selector: [form="lesson-id-form"]]] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element/3/click)
-22:35:59.871 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element/3/click
-22:35:59.877 INFO - Executing: [switch to window: CDwindow-(B9ED1AC14FA9B1FDC4A41FF7EA5D1D07)] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/window)
-22:35:59.902 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/window
-22:35:59.907 INFO - Executing: [find element: By.selector: .lesson-signup button[type="submit"]] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element)
-22:35:59.951 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element
-22:35:59.956 INFO - Executing: [get element attribute: 4 [[ChromeDriver: chrome on MAC (5cacdcd8d3b32747490e8f82ac0a7052)] -> css selector: .lesson-signup button[type="submit"]], disabled] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element/4/attribute/disabled)
-22:35:59.969 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136/element/4/attribute/disabled
-22:35:59.972 INFO - Executing: [delete session: 3da866fc-e900-456b-97f7-e5be17ffd136] at URL: /session/3da866fc-e900-456b-97f7-e5be17ffd136)
-22:36:00.617 INFO - Done: /session/3da866fc-e900-456b-97f7-e5be17ffd136
-22:36:00.621 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]] at URL: /session)
-22:36:00.623 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]
-Starting ChromeDriver 2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef) on port 31212
+            }.apply(window, passedArgs);, [http://127.0.0.1:8000]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/execute)
+22:53:01.341 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/execute
+22:53:01.345 INFO - Executing: [get window handles] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/window_handles)
+22:53:01.389 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/window_handles
+22:53:01.412 INFO - Executing: [switch to window: CDwindow-(71ECEB246AE1DB3947BF29E139E57F03)] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/window)
+22:53:01.437 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/window
+22:53:01.490 INFO - Executing: [find element: By.selector: [name="lesson_id"]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element)
+22:53:01.661 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element
+22:53:01.668 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (fff9c92511dd9d4cce29707a6577eacd)] -> css selector: [name="lesson_id"]], [6, o, v, l, m, 3]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/2/value)
+22:53:01.779 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/2/value
+22:53:01.782 INFO - Executing: [find element: By.selector: [form="lesson-id-form"]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element)
+22:53:01.799 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element
+22:53:01.803 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (fff9c92511dd9d4cce29707a6577eacd)] -> css selector: [form="lesson-id-form"]]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/3/click)
+22:53:01.933 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/3/click
+22:53:01.936 INFO - Executing: [find elements: By.selector: .vote-section__links] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/elements)
+22:53:01.954 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/elements
+22:53:01.957 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on MAC (fff9c92511dd9d4cce29707a6577eacd)] -> css selector: .vote-section__links]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/4/displayed)
+22:53:01.973 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/4/displayed
+22:53:01.977 INFO - Executing: [find element: By.selector: .vote-section__dialog-message] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element)
+22:53:01.995 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element
+22:53:01.997 INFO - Executing: [is displayed: 5 [[ChromeDriver: chrome on MAC (fff9c92511dd9d4cce29707a6577eacd)] -> css selector: .vote-section__dialog-message]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/5/displayed)
+22:53:02.014 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/5/displayed
+22:53:02.019 INFO - Executing: [find element: By.selector: .vote-section__links] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element)
+22:53:02.040 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element
+22:53:02.044 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (fff9c92511dd9d4cce29707a6577eacd)] -> css selector: .vote-section__links]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/4/click)
+22:53:02.098 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/4/click
+22:53:02.106 INFO - Executing: [find elements: By.selector: .vote-section__dialog-message] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/elements)
+22:53:02.126 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/elements
+22:53:02.129 INFO - Executing: [is displayed: 5 [[ChromeDriver: chrome on MAC (fff9c92511dd9d4cce29707a6577eacd)] -> css selector: .vote-section__dialog-message]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/5/displayed)
+22:53:02.142 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/5/displayed
+22:53:02.147 INFO - Executing: [switch to window: CDwindow-(618E4392138E5C253D021F5215DF56C)] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/window)
+22:53:02.166 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/window
+22:53:02.178 INFO - Executing: [find element: By.selector: .js-next-section] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element)
+22:53:02.212 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element
+22:53:02.215 INFO - Executing: [is displayed: 6 [[ChromeDriver: chrome on MAC (fff9c92511dd9d4cce29707a6577eacd)] -> css selector: .js-next-section]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/6/displayed)
+22:53:02.237 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/6/displayed
+22:53:02.244 INFO - Executing: [find elements: By.selector: .lesson-signup button[disabled]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/elements)
+22:53:02.260 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/elements
+22:53:02.264 INFO - Executing: [find element: By.selector: .lesson-signup button] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element)
+22:53:02.286 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element
+22:53:02.289 INFO - Executing: [click: 7 [[ChromeDriver: chrome on MAC (fff9c92511dd9d4cce29707a6577eacd)] -> css selector: .lesson-signup button]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/7/click)
+22:53:02.399 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/7/click
+22:53:02.403 INFO - Executing: [find elements: By.selector: .lesson-signup button[disabled]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/elements)
+22:53:02.419 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/elements
+22:53:02.421 INFO - Executing: [is displayed: 8 [[ChromeDriver: chrome on MAC (fff9c92511dd9d4cce29707a6577eacd)] -> css selector: .lesson-signup button[disabled]]] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/8/displayed)
+22:53:02.438 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad/element/8/displayed
+22:53:02.445 INFO - Executing: [delete session: a032d797-e41c-47fa-aa33-8531c52a89ad] at URL: /session/a032d797-e41c-47fa-aa33-8531c52a89ad)
+22:53:03.098 INFO - Done: /session/a032d797-e41c-47fa-aa33-8531c52a89ad
+22:53:03.108 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Lecturer Journeys, browserName=chrome, javascriptEnabled=true, platform=ANY}]] at URL: /session)
+22:53:03.109 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Lecturer Journeys, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef) on port 45912
 Only local connections are allowed.
-22:36:02.232 INFO - Done: /session
-22:36:02.236 INFO - Executing: [get: http://127.0.0.1:8000] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/url)
-22:36:03.536 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/url
-22:36:03.543 INFO - Executing: [find elements: By.selector: a[href="/create/"]] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/elements)
-22:36:03.568 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/elements
-22:36:03.571 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (292856370a3c670ba84b4f060b958f0e)] -> css selector: a[href="/create/"]]] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/0/displayed)
-22:36:03.599 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/0/displayed
-22:36:03.604 INFO - Executing: [find element: By.selector: a[href="/create/"]] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element)
-22:36:03.631 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element
-22:36:03.634 INFO - Executing: [click: 0 [[ChromeDriver: chrome on MAC (292856370a3c670ba84b4f060b958f0e)] -> css selector: a[href="/create/"]]] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/0/click)
-22:36:03.831 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/0/click
-22:36:03.836 INFO - Executing: [find elements: By.selector: [data-mod="refresh-screen"]] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/elements)
-22:36:03.857 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/elements
-22:36:03.861 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (292856370a3c670ba84b4f060b958f0e)] -> css selector: [data-mod="refresh-screen"]]] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/1/displayed)
-22:36:03.882 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/1/displayed
-22:36:03.890 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
+22:53:04.524 INFO - Done: /session
+22:53:04.528 INFO - Executing: [get: http://127.0.0.1:8000] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/url)
+22:53:05.895 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/url
+22:53:05.900 INFO - Executing: [find elements: By.selector: a[href="/create/"]] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/elements)
+22:53:05.933 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/elements
+22:53:05.937 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (d164c86cb73cff7150b30d3753af3ee7)] -> css selector: a[href="/create/"]]] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element/0/displayed)
+22:53:05.960 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element/0/displayed
+22:53:05.964 INFO - Executing: [find element: By.selector: a[href="/create/"]] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element)
+22:53:05.981 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element
+22:53:05.989 INFO - Executing: [click: 0 [[ChromeDriver: chrome on MAC (d164c86cb73cff7150b30d3753af3ee7)] -> css selector: a[href="/create/"]]] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element/0/click)
+22:53:06.143 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element/0/click
+22:53:06.146 INFO - Executing: [find elements: By.selector: [data-mod="refresh-screen"]] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/elements)
+22:53:06.166 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/elements
+22:53:06.169 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (d164c86cb73cff7150b30d3753af3ee7)] -> css selector: [data-mod="refresh-screen"]]] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element/1/displayed)
+22:53:06.190 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element/1/displayed
+22:53:06.196 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
                 return window.localStorage.getItem('lecturerLessonId');
-            }.apply(window, passedArgs);, []] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/execute)
-22:36:03.898 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/execute
-22:36:03.905 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (url) {
+            }.apply(window, passedArgs);, []] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/execute)
+22:53:06.204 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/execute
+22:53:06.207 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (url) {
                 window.open(url);
-            }.apply(window, passedArgs);, [http://127.0.0.1:8000]] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/execute)
-22:36:03.953 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/execute
-22:36:03.957 INFO - Executing: [get window handles] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/window_handles)
-22:36:04.007 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/window_handles
-22:36:04.016 INFO - Executing: [switch to window: CDwindow-(8280CFC931651EF88DDB5F1E7865CC0)] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/window)
-22:36:04.053 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/window
-22:36:04.060 INFO - Executing: [find element: By.selector: [name="lesson_id"]] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element)
-22:36:04.370 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element
-22:36:04.377 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (292856370a3c670ba84b4f060b958f0e)] -> css selector: [name="lesson_id"]], [a, f, n, y, w, j]] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/2/value)
-22:36:04.507 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/2/value
-22:36:04.511 INFO - Executing: [find element: By.selector: [form="lesson-id-form"]] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element)
-22:36:04.529 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element
-22:36:04.532 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (292856370a3c670ba84b4f060b958f0e)] -> css selector: [form="lesson-id-form"]]] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/3/click)
-22:36:04.671 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/3/click
-22:36:04.676 INFO - Executing: [find elements: By.selector: .vote-section__links] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/elements)
-22:36:04.704 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/elements
-22:36:04.706 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on MAC (292856370a3c670ba84b4f060b958f0e)] -> css selector: .vote-section__links]] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/4/displayed)
-22:36:04.726 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/4/displayed
-22:36:04.731 INFO - Executing: [find element: By.selector: .vote-section__dialog-message] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element)
-22:36:04.749 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element
-22:36:04.753 INFO - Executing: [is displayed: 5 [[ChromeDriver: chrome on MAC (292856370a3c670ba84b4f060b958f0e)] -> css selector: .vote-section__dialog-message]] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/5/displayed)
-22:36:04.768 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/5/displayed
-22:36:04.771 INFO - Executing: [find element: By.selector: .vote-section__links] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element)
-22:36:04.790 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element
-22:36:04.793 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (292856370a3c670ba84b4f060b958f0e)] -> css selector: .vote-section__links]] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/4/click)
-22:36:04.849 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/4/click
-22:36:04.853 INFO - Executing: [find elements: By.selector: .vote-section__dialog-message] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/elements)
-22:36:04.878 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/elements
-22:36:04.883 INFO - Executing: [is displayed: 5 [[ChromeDriver: chrome on MAC (292856370a3c670ba84b4f060b958f0e)] -> css selector: .vote-section__dialog-message]] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/5/displayed)
-22:36:04.896 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/5/displayed
-22:36:04.901 INFO - Executing: [switch to window: CDwindow-(AEC295DDF0431E9050E9E601BF4834F4)] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/window)
-22:36:04.928 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/window
-22:36:04.944 INFO - Executing: [find element: By.selector: .js-next-section] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element)
-22:36:04.971 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element
-22:36:04.977 INFO - Executing: [is displayed: 6 [[ChromeDriver: chrome on MAC (292856370a3c670ba84b4f060b958f0e)] -> css selector: .js-next-section]] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/6/displayed)
-22:36:04.993 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b/element/6/displayed
-22:36:04.996 INFO - Executing: [delete session: aaf43f8f-a923-4a50-a350-e4084314cd8b] at URL: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b)
-22:36:05.641 INFO - Done: /session/aaf43f8f-a923-4a50-a350-e4084314cd8b
-22:36:05.646 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]] at URL: /session)
-22:36:05.648 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]
-Starting ChromeDriver 2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef) on port 15730
+            }.apply(window, passedArgs);, [http://127.0.0.1:8000]] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/execute)
+22:53:06.264 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/execute
+22:53:06.267 INFO - Executing: [get window handles] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/window_handles)
+22:53:06.310 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/window_handles
+22:53:06.316 INFO - Executing: [switch to window: CDwindow-(C7B298D7A8B368401A4682C25BD2DDF6)] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/window)
+22:53:06.340 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/window
+22:53:06.347 INFO - Executing: [find element: By.selector: [name="lesson_id"]] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element)
+22:53:06.614 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element
+22:53:06.620 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (d164c86cb73cff7150b30d3753af3ee7)] -> css selector: [name="lesson_id"]], [z, i, 5, u, z, j]] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element/2/value)
+22:53:06.722 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element/2/value
+22:53:06.725 INFO - Executing: [find element: By.selector: [form="lesson-id-form"]] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element)
+22:53:06.743 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element
+22:53:06.746 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (d164c86cb73cff7150b30d3753af3ee7)] -> css selector: [form="lesson-id-form"]]] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element/3/click)
+22:53:06.871 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element/3/click
+22:53:06.877 INFO - Executing: [switch to window: CDwindow-(387E04DD57880C9C87A8A7006C94919B)] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/window)
+22:53:06.896 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/window
+22:53:06.900 INFO - Executing: [find element: By.selector: .lesson-signup [href="/lesson/zi5uzj/end"]] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element)
+22:53:06.930 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element
+22:53:06.933 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (d164c86cb73cff7150b30d3753af3ee7)] -> css selector: .lesson-signup [href="/lesson/zi5uzj/end"]]] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element/4/click)
+22:53:07.058 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element/4/click
+22:53:07.061 INFO - Executing: [find element: By.selector: h1] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element)
+22:53:07.080 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element
+22:53:07.082 INFO - Executing: [get text: 5 [[ChromeDriver: chrome on MAC (d164c86cb73cff7150b30d3753af3ee7)] -> css selector: h1]] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element/5/text)
+22:53:07.101 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element/5/text
+22:53:07.104 INFO - Executing: [switch to window: CDwindow-(C7B298D7A8B368401A4682C25BD2DDF6)] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/window)
+22:53:07.130 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/window
+22:53:08.140 INFO - Executing: [find element: By.selector: h1] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element)
+22:53:08.152 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element
+22:53:08.154 INFO - Executing: [get text: 6 [[ChromeDriver: chrome on MAC (d164c86cb73cff7150b30d3753af3ee7)] -> css selector: h1]] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element/6/text)
+22:53:08.173 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c/element/6/text
+22:53:08.176 INFO - Executing: [delete session: 9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c] at URL: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c)
+22:53:08.815 INFO - Done: /session/9d4410db-5b0a-491c-b80a-dbb9a7a9aa5c
+22:53:08.840 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Student Journeys, browserName=chrome, javascriptEnabled=true, platform=ANY}]] at URL: /session)
+22:53:08.841 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Student Journeys, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef) on port 15576
 Only local connections are allowed.
-22:36:07.070 INFO - Done: /session
-22:36:07.078 INFO - Executing: [get: http://127.0.0.1:8000] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/url)
-22:36:08.323 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/url
-22:36:08.330 INFO - Executing: [find elements: By.selector: a[href="/create/"]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/elements)
-22:36:08.356 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/elements
-22:36:08.360 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (c166f0796125d3e72b586b54411b9273)] -> css selector: a[href="/create/"]]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/0/displayed)
-22:36:08.385 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/0/displayed
-22:36:08.389 INFO - Executing: [find element: By.selector: a[href="/create/"]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element)
-22:36:08.425 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element
-22:36:08.431 INFO - Executing: [click: 0 [[ChromeDriver: chrome on MAC (c166f0796125d3e72b586b54411b9273)] -> css selector: a[href="/create/"]]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/0/click)
-22:36:08.603 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/0/click
-22:36:08.608 INFO - Executing: [find elements: By.selector: [data-mod="refresh-screen"]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/elements)
-22:36:08.627 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/elements
-22:36:08.635 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (c166f0796125d3e72b586b54411b9273)] -> css selector: [data-mod="refresh-screen"]]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/1/displayed)
-22:36:08.654 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/1/displayed
-22:36:08.658 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
+22:53:10.269 INFO - Done: /session
+22:53:10.273 INFO - Executing: [get: http://127.0.0.1:8000] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/url)
+22:53:11.857 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/url
+22:53:11.863 INFO - Executing: [find elements: By.selector: a[href="/create/"]] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/elements)
+22:53:11.888 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/elements
+22:53:11.892 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (b0d7795d74cc862d1a524a994ac1f0c6)] -> css selector: a[href="/create/"]]] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element/0/displayed)
+22:53:11.914 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element/0/displayed
+22:53:11.918 INFO - Executing: [find element: By.selector: a[href="/create/"]] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element)
+22:53:11.939 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element
+22:53:11.942 INFO - Executing: [click: 0 [[ChromeDriver: chrome on MAC (b0d7795d74cc862d1a524a994ac1f0c6)] -> css selector: a[href="/create/"]]] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element/0/click)
+22:53:12.106 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element/0/click
+22:53:12.114 INFO - Executing: [find elements: By.selector: [data-mod="refresh-screen"]] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/elements)
+22:53:12.141 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/elements
+22:53:12.145 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (b0d7795d74cc862d1a524a994ac1f0c6)] -> css selector: [data-mod="refresh-screen"]]] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element/1/displayed)
+22:53:12.172 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element/1/displayed
+22:53:12.175 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
                 return window.localStorage.getItem('lecturerLessonId');
-            }.apply(window, passedArgs);, []] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/execute)
-22:36:08.668 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/execute
-22:36:08.671 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (url) {
+            }.apply(window, passedArgs);, []] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/execute)
+22:53:12.207 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/execute
+22:53:12.211 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (url) {
                 window.open(url);
-            }.apply(window, passedArgs);, [http://127.0.0.1:8000]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/execute)
-22:36:08.733 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/execute
-22:36:08.738 INFO - Executing: [get window handles] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/window_handles)
-22:36:08.793 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/window_handles
-22:36:08.802 INFO - Executing: [switch to window: CDwindow-(14CB6C1B47DF2DD1E8F46EAEDD6DF3B3)] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/window)
-22:36:08.832 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/window
-22:36:08.847 INFO - Executing: [find element: By.selector: [name="lesson_id"]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element)
-22:36:09.096 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element
-22:36:09.100 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (c166f0796125d3e72b586b54411b9273)] -> css selector: [name="lesson_id"]], [q, 5, t, 5, o, z]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/2/value)
-22:36:09.213 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/2/value
-22:36:09.216 INFO - Executing: [find element: By.selector: [form="lesson-id-form"]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element)
-22:36:09.234 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element
-22:36:09.237 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (c166f0796125d3e72b586b54411b9273)] -> css selector: [form="lesson-id-form"]]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/3/click)
-22:36:09.368 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/3/click
-22:36:09.374 INFO - Executing: [find elements: By.selector: .vote-section__links] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/elements)
-22:36:09.393 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/elements
-22:36:09.403 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on MAC (c166f0796125d3e72b586b54411b9273)] -> css selector: .vote-section__links]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/4/displayed)
-22:36:09.424 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/4/displayed
-22:36:09.430 INFO - Executing: [find element: By.selector: .vote-section__dialog-message] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element)
-22:36:09.450 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element
-22:36:09.452 INFO - Executing: [is displayed: 5 [[ChromeDriver: chrome on MAC (c166f0796125d3e72b586b54411b9273)] -> css selector: .vote-section__dialog-message]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/5/displayed)
-22:36:09.471 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/5/displayed
-22:36:09.474 INFO - Executing: [find element: By.selector: .vote-section__links] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element)
-22:36:09.503 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element
-22:36:09.506 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (c166f0796125d3e72b586b54411b9273)] -> css selector: .vote-section__links]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/4/click)
-22:36:09.588 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/4/click
-22:36:09.591 INFO - Executing: [find elements: By.selector: .vote-section__dialog-message] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/elements)
-22:36:09.615 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/elements
-22:36:09.620 INFO - Executing: [is displayed: 5 [[ChromeDriver: chrome on MAC (c166f0796125d3e72b586b54411b9273)] -> css selector: .vote-section__dialog-message]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/5/displayed)
-22:36:09.639 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/5/displayed
-22:36:09.643 INFO - Executing: [switch to window: CDwindow-(671A32232D9279585F70878F9DCC5A5A)] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/window)
-22:36:09.665 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/window
-22:36:09.670 INFO - Executing: [find element: By.selector: .js-next-section] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element)
-22:36:09.722 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element
-22:36:09.725 INFO - Executing: [is displayed: 6 [[ChromeDriver: chrome on MAC (c166f0796125d3e72b586b54411b9273)] -> css selector: .js-next-section]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/6/displayed)
-22:36:09.746 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/6/displayed
-22:36:09.751 INFO - Executing: [find elements: By.selector: .lesson-signup button[disabled]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/elements)
-22:36:09.787 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/elements
-22:36:09.791 INFO - Executing: [find element: By.selector: .lesson-signup button] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element)
-22:36:09.811 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element
-22:36:09.815 INFO - Executing: [click: 7 [[ChromeDriver: chrome on MAC (c166f0796125d3e72b586b54411b9273)] -> css selector: .lesson-signup button]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/7/click)
-22:36:09.954 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/7/click
-22:36:09.957 INFO - Executing: [find elements: By.selector: .lesson-signup button[disabled]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/elements)
-22:36:09.972 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/elements
-22:36:09.975 INFO - Executing: [is displayed: 8 [[ChromeDriver: chrome on MAC (c166f0796125d3e72b586b54411b9273)] -> css selector: .lesson-signup button[disabled]]] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/8/displayed)
-22:36:09.993 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d/element/8/displayed
-22:36:10.008 INFO - Executing: [delete session: 17386b91-6ed4-4785-8d81-f945a64e0b6d] at URL: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d)
-22:36:10.662 INFO - Done: /session/17386b91-6ed4-4785-8d81-f945a64e0b6d
-22:36:10.676 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]] at URL: /session)
-22:36:10.679 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]
-Starting ChromeDriver 2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef) on port 41731
+            }.apply(window, passedArgs);, [http://127.0.0.1:8000]] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/execute)
+22:53:12.308 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/execute
+22:53:12.313 INFO - Executing: [get window handles] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/window_handles)
+22:53:12.330 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/window_handles
+22:53:12.337 INFO - Executing: [switch to window: CDwindow-(5EE4D0BDCDF323FBF7C94DF6FF982E85)] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/window)
+22:53:12.363 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/window
+22:53:13.372 INFO - Executing: [find element: By.selector: [name="lesson_id"]] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element)
+22:53:13.457 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element
+22:53:13.463 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (b0d7795d74cc862d1a524a994ac1f0c6)] -> css selector: [name="lesson_id"]], [2, y, 1, x, z, i]] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element/2/value)
+22:53:13.565 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element/2/value
+22:53:13.570 INFO - Executing: [find element: By.selector: [form="lesson-id-form"]] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element)
+22:53:13.590 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element
+22:53:13.593 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (b0d7795d74cc862d1a524a994ac1f0c6)] -> css selector: [form="lesson-id-form"]]] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element/3/click)
+22:53:13.743 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element/3/click
+22:53:13.749 INFO - Executing: [find element: By.selector: .vote-section] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element)
+22:53:13.780 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element
+22:53:13.785 INFO - Executing: [get text: 4 [[ChromeDriver: chrome on MAC (b0d7795d74cc862d1a524a994ac1f0c6)] -> css selector: .vote-section]] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element/4/text)
+22:53:13.808 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff/element/4/text
+22:53:13.812 INFO - Executing: [delete session: 079a15ac-37b9-44be-8481-89c56d54cdff] at URL: /session/079a15ac-37b9-44be-8481-89c56d54cdff)
+22:53:14.453 INFO - Done: /session/079a15ac-37b9-44be-8481-89c56d54cdff
+22:53:14.457 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Student Journeys, browserName=chrome, javascriptEnabled=true, platform=ANY}]] at URL: /session)
+22:53:14.459 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Student Journeys, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef) on port 33387
 Only local connections are allowed.
-22:36:12.198 INFO - Done: /session
-22:36:12.203 INFO - Executing: [get: http://127.0.0.1:8000] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/url)
-22:36:13.521 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/url
-22:36:13.532 INFO - Executing: [find elements: By.selector: a[href="/create/"]] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/elements)
-22:36:13.568 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/elements
-22:36:13.572 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (5d572012c320b45f914aed6c6e240f11)] -> css selector: a[href="/create/"]]] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/0/displayed)
-22:36:13.606 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/0/displayed
-22:36:13.610 INFO - Executing: [find element: By.selector: a[href="/create/"]] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element)
-22:36:13.636 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element
-22:36:13.639 INFO - Executing: [click: 0 [[ChromeDriver: chrome on MAC (5d572012c320b45f914aed6c6e240f11)] -> css selector: a[href="/create/"]]] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/0/click)
-22:36:13.841 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/0/click
-22:36:13.848 INFO - Executing: [find elements: By.selector: [data-mod="refresh-screen"]] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/elements)
-22:36:13.875 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/elements
-22:36:13.878 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (5d572012c320b45f914aed6c6e240f11)] -> css selector: [data-mod="refresh-screen"]]] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/1/displayed)
-22:36:13.904 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/1/displayed
-22:36:13.907 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
+22:53:15.896 INFO - Done: /session
+22:53:15.900 INFO - Executing: [get: http://127.0.0.1:8000] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/url)
+22:53:17.295 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/url
+22:53:17.308 INFO - Executing: [find elements: By.selector: a[href="/create/"]] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/elements)
+22:53:17.336 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/elements
+22:53:17.348 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (bb5ea83be63e60072f30d64fab3ce673)] -> css selector: a[href="/create/"]]] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/0/displayed)
+22:53:17.376 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/0/displayed
+22:53:17.379 INFO - Executing: [find element: By.selector: a[href="/create/"]] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element)
+22:53:17.399 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element
+22:53:17.401 INFO - Executing: [click: 0 [[ChromeDriver: chrome on MAC (bb5ea83be63e60072f30d64fab3ce673)] -> css selector: a[href="/create/"]]] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/0/click)
+22:53:17.575 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/0/click
+22:53:17.579 INFO - Executing: [find elements: By.selector: [data-mod="refresh-screen"]] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/elements)
+22:53:17.602 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/elements
+22:53:17.604 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (bb5ea83be63e60072f30d64fab3ce673)] -> css selector: [data-mod="refresh-screen"]]] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/1/displayed)
+22:53:17.623 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/1/displayed
+22:53:17.626 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
                 return window.localStorage.getItem('lecturerLessonId');
-            }.apply(window, passedArgs);, []] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/execute)
-22:36:13.915 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/execute
-22:36:13.919 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (url) {
+            }.apply(window, passedArgs);, []] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/execute)
+22:53:17.635 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/execute
+22:53:17.641 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (url) {
                 window.open(url);
-            }.apply(window, passedArgs);, [http://127.0.0.1:8000]] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/execute)
-22:36:13.972 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/execute
-22:36:13.978 INFO - Executing: [get window handles] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/window_handles)
-22:36:14.025 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/window_handles
-22:36:14.035 INFO - Executing: [switch to window: CDwindow-(E91BDC7798774737D15487E501F12360)] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/window)
-22:36:14.049 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/window
-22:36:14.056 INFO - Executing: [find element: By.selector: [name="lesson_id"]] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element)
-22:36:14.382 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element
-22:36:14.386 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (5d572012c320b45f914aed6c6e240f11)] -> css selector: [name="lesson_id"]], [5, j, f, 1, o, t]] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/2/value)
-22:36:14.527 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/2/value
-22:36:14.530 INFO - Executing: [find element: By.selector: [form="lesson-id-form"]] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element)
-22:36:14.549 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element
-22:36:14.552 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (5d572012c320b45f914aed6c6e240f11)] -> css selector: [form="lesson-id-form"]]] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/3/click)
-22:36:14.697 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/3/click
-22:36:14.700 INFO - Executing: [find elements: By.selector: .vote-section__links] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/elements)
-22:36:14.721 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/elements
-22:36:14.727 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on MAC (5d572012c320b45f914aed6c6e240f11)] -> css selector: .vote-section__links]] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/4/displayed)
-22:36:14.744 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/4/displayed
-22:36:14.747 INFO - Executing: [find element: By.selector: .vote-section__links] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element)
-22:36:14.768 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element
-22:36:14.771 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (5d572012c320b45f914aed6c6e240f11)] -> css selector: .vote-section__links]] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/4/click)
-22:36:14.825 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/4/click
-22:36:14.832 INFO - Executing: [switch to window: CDwindow-(D95EA33FA0ED821591F6613F90702687)] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/window)
-22:36:14.859 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/window
-22:36:14.865 INFO - Executing: [find element: By.selector: .lesson-signup button] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element)
-22:36:14.901 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element
-22:36:14.904 INFO - Executing: [click: 5 [[ChromeDriver: chrome on MAC (5d572012c320b45f914aed6c6e240f11)] -> css selector: .lesson-signup button]] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/5/click)
-22:36:15.025 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/5/click
-22:36:15.031 INFO - Executing: [switch to window: CDwindow-(E91BDC7798774737D15487E501F12360)] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/window)
-22:36:15.058 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/window
-22:36:16.066 INFO - Executing: [find elements: By.selector: .vote-section__dialog-message] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/elements)
-22:36:16.084 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/elements
-22:36:16.087 INFO - Executing: [is displayed: 6 [[ChromeDriver: chrome on MAC (5d572012c320b45f914aed6c6e240f11)] -> css selector: .vote-section__dialog-message]] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/6/displayed)
-22:36:16.103 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432/element/6/displayed
-22:36:16.107 INFO - Executing: [delete session: 6e859a17-674b-4f15-a7e5-ff795e38d432] at URL: /session/6e859a17-674b-4f15-a7e5-ff795e38d432)
-22:36:16.755 INFO - Done: /session/6e859a17-674b-4f15-a7e5-ff795e38d432
+            }.apply(window, passedArgs);, [http://127.0.0.1:8000]] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/execute)
+22:53:17.697 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/execute
+22:53:17.701 INFO - Executing: [get window handles] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/window_handles)
+22:53:17.746 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/window_handles
+22:53:17.757 INFO - Executing: [switch to window: CDwindow-(B55F232476D5572550D522BDACEA6A37)] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/window)
+22:53:17.792 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/window
+22:53:17.811 INFO - Executing: [find element: By.selector: [name="lesson_id"]] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element)
+22:53:18.036 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element
+22:53:18.040 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (bb5ea83be63e60072f30d64fab3ce673)] -> css selector: [name="lesson_id"]], [t, e, d, f, y, i]] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/2/value)
+22:53:18.136 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/2/value
+22:53:18.139 INFO - Executing: [find element: By.selector: [form="lesson-id-form"]] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element)
+22:53:18.156 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element
+22:53:18.158 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (bb5ea83be63e60072f30d64fab3ce673)] -> css selector: [form="lesson-id-form"]]] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/3/click)
+22:53:18.287 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/3/click
+22:53:18.293 INFO - Executing: [find elements: By.selector: .vote-section__links] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/elements)
+22:53:18.311 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/elements
+22:53:18.313 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on MAC (bb5ea83be63e60072f30d64fab3ce673)] -> css selector: .vote-section__links]] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/4/displayed)
+22:53:18.329 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/4/displayed
+22:53:18.332 INFO - Executing: [find element: By.selector: .vote-section__dialog-message] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element)
+22:53:18.348 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element
+22:53:18.351 INFO - Executing: [is displayed: 5 [[ChromeDriver: chrome on MAC (bb5ea83be63e60072f30d64fab3ce673)] -> css selector: .vote-section__dialog-message]] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/5/displayed)
+22:53:18.366 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/5/displayed
+22:53:18.372 INFO - Executing: [find element: By.selector: .vote-section__links] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element)
+22:53:18.388 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element
+22:53:18.390 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (bb5ea83be63e60072f30d64fab3ce673)] -> css selector: .vote-section__links]] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/4/click)
+22:53:18.445 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/4/click
+22:53:18.450 INFO - Executing: [find elements: By.selector: .vote-section__dialog-message] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/elements)
+22:53:18.471 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/elements
+22:53:18.475 INFO - Executing: [is displayed: 5 [[ChromeDriver: chrome on MAC (bb5ea83be63e60072f30d64fab3ce673)] -> css selector: .vote-section__dialog-message]] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/5/displayed)
+22:53:18.486 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/5/displayed
+22:53:18.492 INFO - Executing: [switch to window: CDwindow-(64AFFA0D7FD1FF304FE3A09C0954575D)] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/window)
+22:53:18.513 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/window
+22:53:18.532 INFO - Executing: [find elements: By.selector: .js-next-section] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/elements)
+22:53:18.574 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/elements
+22:53:18.577 INFO - Executing: [is displayed: 6 [[ChromeDriver: chrome on MAC (bb5ea83be63e60072f30d64fab3ce673)] -> css selector: .js-next-section]] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/6/displayed)
+22:53:18.598 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509/element/6/displayed
+22:53:18.602 INFO - Executing: [delete session: a3222dd1-3aeb-4a00-8993-c952332f6509] at URL: /session/a3222dd1-3aeb-4a00-8993-c952332f6509)
+22:53:19.246 INFO - Done: /session/a3222dd1-3aeb-4a00-8993-c952332f6509
+22:53:19.256 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Student Journeys, browserName=chrome, javascriptEnabled=true, platform=ANY}]] at URL: /session)
+22:53:19.257 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Student Journeys, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef) on port 21560
+Only local connections are allowed.
+22:53:20.679 INFO - Done: /session
+22:53:20.683 INFO - Executing: [get: http://127.0.0.1:8000] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/url)
+22:53:22.064 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/url
+22:53:22.074 INFO - Executing: [find elements: By.selector: a[href="/create/"]] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/elements)
+22:53:22.099 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/elements
+22:53:22.102 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (a0e0a9b41c8f951e677251f9fb76e56e)] -> css selector: a[href="/create/"]]] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/0/displayed)
+22:53:22.121 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/0/displayed
+22:53:22.125 INFO - Executing: [find element: By.selector: a[href="/create/"]] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element)
+22:53:22.144 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element
+22:53:22.147 INFO - Executing: [click: 0 [[ChromeDriver: chrome on MAC (a0e0a9b41c8f951e677251f9fb76e56e)] -> css selector: a[href="/create/"]]] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/0/click)
+22:53:22.300 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/0/click
+22:53:22.304 INFO - Executing: [find elements: By.selector: [data-mod="refresh-screen"]] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/elements)
+22:53:22.321 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/elements
+22:53:22.323 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (a0e0a9b41c8f951e677251f9fb76e56e)] -> css selector: [data-mod="refresh-screen"]]] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/1/displayed)
+22:53:22.341 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/1/displayed
+22:53:22.344 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
+                return window.localStorage.getItem('lecturerLessonId');
+            }.apply(window, passedArgs);, []] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/execute)
+22:53:22.351 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/execute
+22:53:22.354 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (url) {
+                window.open(url);
+            }.apply(window, passedArgs);, [http://127.0.0.1:8000]] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/execute)
+22:53:22.407 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/execute
+22:53:22.410 INFO - Executing: [get window handles] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/window_handles)
+22:53:22.447 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/window_handles
+22:53:22.460 INFO - Executing: [switch to window: CDwindow-(BDE4E427FC18D0C1A1F7C44101700A85)] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/window)
+22:53:22.494 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/window
+22:53:22.541 INFO - Executing: [find element: By.selector: [name="lesson_id"]] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element)
+22:53:22.747 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element
+22:53:22.753 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (a0e0a9b41c8f951e677251f9fb76e56e)] -> css selector: [name="lesson_id"]], [x, j, 3, 7, n, g]] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/2/value)
+22:53:22.858 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/2/value
+22:53:22.861 INFO - Executing: [find element: By.selector: [form="lesson-id-form"]] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element)
+22:53:22.880 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element
+22:53:22.883 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (a0e0a9b41c8f951e677251f9fb76e56e)] -> css selector: [form="lesson-id-form"]]] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/3/click)
+22:53:23.031 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/3/click
+22:53:23.034 INFO - Executing: [find elements: By.selector: .vote-section__links] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/elements)
+22:53:23.058 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/elements
+22:53:23.061 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on MAC (a0e0a9b41c8f951e677251f9fb76e56e)] -> css selector: .vote-section__links]] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/4/displayed)
+22:53:23.079 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/4/displayed
+22:53:23.082 INFO - Executing: [find element: By.selector: .vote-section__links] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element)
+22:53:23.096 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element
+22:53:23.101 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (a0e0a9b41c8f951e677251f9fb76e56e)] -> css selector: .vote-section__links]] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/4/click)
+22:53:23.157 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/4/click
+22:53:23.160 INFO - Executing: [switch to window: CDwindow-(8A73ADDB54E76301E0A749539653AF0)] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/window)
+22:53:23.179 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/window
+22:53:24.186 INFO - Executing: [find element: By.selector: .lesson-signup button] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element)
+22:53:24.202 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element
+22:53:24.204 INFO - Executing: [click: 5 [[ChromeDriver: chrome on MAC (a0e0a9b41c8f951e677251f9fb76e56e)] -> css selector: .lesson-signup button]] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/5/click)
+22:53:24.313 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/5/click
+22:53:24.317 INFO - Executing: [switch to window: CDwindow-(BDE4E427FC18D0C1A1F7C44101700A85)] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/window)
+22:53:24.348 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/window
+22:53:25.359 INFO - Executing: [find elements: By.selector: .vote-section__dialog-message] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/elements)
+22:53:25.375 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/elements
+22:53:25.377 INFO - Executing: [is displayed: 6 [[ChromeDriver: chrome on MAC (a0e0a9b41c8f951e677251f9fb76e56e)] -> css selector: .vote-section__dialog-message]] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/6/displayed)
+22:53:25.392 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e/element/6/displayed
+22:53:25.395 INFO - Executing: [delete session: 7f4980e7-80c8-4411-8ef5-52c0609f788e] at URL: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e)
+22:53:26.055 INFO - Done: /session/7f4980e7-80c8-4411-8ef5-52c0609f788e

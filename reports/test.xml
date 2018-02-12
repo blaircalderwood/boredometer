@@ -16,7 +16,7 @@
         Error while running [Test / Creating lesson should set lecturerLessonID]:
 
   ReferenceError: window is not defined
-    at Object.Creating lesson should set lecturerLessonID (/Users/samgregory/Sites/boredometer/tests/test.js:4:17)
+    at Object.Creating lesson should set lecturerLessonID (/Users/samgregory/Sites/boredometer/tests/lecturer-journeys.js:4:17)
     at Module.call (/Users/samgregory/Sites/boredometer/node_modules/nightwatch/lib/runner/module.js:62:34)
     at /Users/samgregory/Sites/boredometer/node_modules/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/samgregory/Sites/boredometer/node_modules/q/q.js:834:54)

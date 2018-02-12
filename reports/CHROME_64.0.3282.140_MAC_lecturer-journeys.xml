@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="5">
+
+  <testsuite name="lecturer-journeys"
+    errors="0" failures="0" hostname="" id="" package="lecturer-journeys" skipped="0"
+    tests="5" time="27.76" timestamp="Mon, 12 Feb 2018 22:52:40 GMT">
+  
+    <testcase name="Creating lesson should set lecturerLessonID" classname="lecturer-journeys" time="6.033" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Lecturer should reflect number of students" classname="lecturer-journeys" time="6.292" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Lecturer should not be able to skip section" classname="lecturer-journeys" time="4.681" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="lecturer should be able to skip after total down votes" classname="lecturer-journeys" time="5.043" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="End session should end for both student and lecturer" classname="lecturer-journeys" time="5.714" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
