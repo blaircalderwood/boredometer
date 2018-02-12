@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="7">
+
+  <testsuite name="test"
+    errors="0" failures="0" hostname="" id="" package="test" skipped="0"
+    tests="7" time="38.72" timestamp="Mon, 12 Feb 2018 22:35:37 GMT">
+  
+    <testcase name="Creating lesson should set lecturerLessonID" classname="test" time="6.303" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="User should be able to enter with lecturerID" classname="test" time="5.233" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Lecturer should reflect number of students" classname="test" time="6.068" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Lecturer should not be able to skip section" classname="test" time="4.981" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Student voting down should reflect on lecturer" classname="test" time="5.024" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="lecturer should be able to skip after total down votes" classname="test" time="5.029" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Student should be able to vote again after next section" classname="test" time="6.085" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
