@@ -24,6 +24,17 @@ module.exports = {
             })
             .end();
     },
+    'Student should not be able to enter with invalid lecturerID': function (browser) {
+        var id;
+
+        browser
+            .url(browser.launchUrl)
+            .waitForElementVisible('body', 1000)
+            .setValue('[name="lesson_id"]', 'h4do2t')
+            .click('[form="lesson-id-form"]')
+            .assert.containsText('.form-error-message', 'That lesson ID does not exist.')
+            .end();
+    },
     'Student voting down should reflect on lecturer': function(browser) {
         var id;
 
